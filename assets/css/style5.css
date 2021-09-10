@@ -1,0 +1,1243 @@
+/*--------------------- Copyright (c) 2020 ----------------------- 
+[Master Stylesheet] 
+Project: Multifarious GYM
+Version: 1.0.0 
+Author: Kamleshyadav
+ ------------------------------------------------------------------- 
+[Table of contents] 
+	1. Global CSS Start
+	2. Comman CSS Start
+    3. Preloader CSS Start
+    4. Header CSS Start
+    5. Banner CSS Start
+    6. Call To Action CSS Start
+    7. About CSS Start
+    8. Counter CSS Start
+    9. Service CSS Start
+    10. Quote CSS Start
+    11. FAQ's CSS Start
+    12. Testimonial CSS Start
+    13. Steps CSS Start
+    14. Call To Action Second CSS Start
+    15. Blog CSS Start
+    16. Contact CSS Start
+    17. Footer CSS Start
+    18. Responsive CSS Start
+
+-------------------------------------------------------------------*/
+
+/********************************************************
+    1. Global CSS Start
+********************************************************/
+body {
+    color: var(--main-txt-color);
+    background: var(--main-bg-color);
+}
+a, a:hover, a:focus {
+	color: var(--main-link-color);
+}
+h1, h2, h3, h4, h5, h6 {
+    color: var(--main-link-color);
+}
+/********************************************************
+    2. Comman CSS Start
+********************************************************/
+.pnt_btn {
+    min-width: 170px;
+    padding: 0 15px;
+    height: 50px;
+    line-height: 52px;
+    display: inline-block;
+    text-align: center;
+    color: var(--main-paint-color);
+    background: var(--main-bg-color);
+    text-transform: capitalize;
+    font-weight: 500;
+    position: relative;
+    overflow: hidden;
+}
+.pnt_btn:hover {
+    color: var(--main-bg-color);
+    background: var(--main-paint-color);
+}
+.pnt_btn, .pnt_btn:focus, .pnt_btn:hover {
+    cursor: pointer;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+a#scroll {
+    background: var(--main-paint-color);
+    color: var(--main-bg-color);
+}
+.pnt_title {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--main-paint-color);
+}
+.white {
+    color: var(--main-bg-color);
+}
+.pnt_subHeading {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 34px;
+}
+.pnt_icon_bg {
+    background: -webkit-linear-gradient(top, var(--main-paint-color1), var(--main-paint-color2));
+    width: 70px;
+    height: 70px;
+    display: inline-block;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pnt_icon_bg svg {
+    fill: var(--main-bg-color);
+    width: 30px;
+}
+.pnt_heading h2 {
+    font-size: 42px;
+    font-weight: 500;
+    margin-bottom: 37px;
+}
+.response {
+    position: unset;
+    margin: 4px 0 11px;
+}
+/********************************************************
+    3. Preloader CSS Start
+********************************************************/
+.preloader_active .preloader_holder {
+    background-color: var(--main-bg-color);
+}
+.preloader_active .preloader_holder .preloader span {
+    box-shadow: 0px 0px 0px 0px var(--main-paint-color);
+}
+@-webkit-keyframes loadingCircles{
+    0%{-webkit-transform: scale(0); opacity: 1; box-shadow: 0px 0px 0px 10px var(--main-paint-color);}
+    100%{-webkit-transform: scale(1); opacity: 0; box-shadow: 0px 0px 0px 2px var(--main-paint-color);}
+}
+@-moz-keyframes loadingCircles{
+    0%{-moz-transform: scale(0); opacity: 1; box-shadow: 0px 0px 0px 10px var(--main-paint-color);}
+    100%{-moz-transform: scale(1); opacity: 0; box-shadow: 0px 0px 0px 2px var(--main-paint-color);}
+}
+@keyframes loadingCircles{
+    0%{transform: scale(0); opacity: 1; box-shadow: 0px 0px 0px 10px var(--main-paint-color);}
+    100%{transform: scale(1); opacity: 0; box-shadow: 0px 0px 0px 2px var(--main-paint-color);}
+}
+.preloader_open:before, .preloader_open:after {
+    background-color: var(--main-bg-color);
+}
+/********************************************************
+    4. Header CSS Start
+********************************************************/
+.pnt_header_top {
+    padding: 12px 0 0;
+    background: var(--main-paint-color);
+    color: var(--main-bg-color);
+}
+.pnt_header_info ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+.pnt_header_icon svg {
+    width: 20px;
+    fill: var(--main-bg-color);
+}
+.pnt_header_info ul li {
+    margin-bottom: 12px;
+    margin-left: 30px;
+    font-weight: 500;
+    padding-left: 30px;
+    position: relative;
+}
+.pnt_header_info_left ul li:before {
+    content: "";
+    position: absolute;
+    background: rgba(255, 255, 255, 0.1);
+    height: 28px;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    width: 1px;
+}
+.pnt_header_info_left ul li:first-child:before {
+    content: unset;
+}
+.pnt_header_info ul li:first-child {
+    margin-left: 0;
+    padding-left: 0;
+}
+.pnt_header_info ul li a {
+    color: var(--main-bg-color);
+}
+.pnt_header_icon {
+    margin-right: 6px;
+}
+.pnt_header_wrapper {
+    padding: 20px 0;
+}
+.searchBox {
+    background: rgba(6, 135, 170, 0.95);
+}
+/********************************************************
+    5. Banner CSS Start
+********************************************************/
+.pnt_banner_wrapper {
+    position: relative;
+    background: url(../images/index2/banner_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    padding: 200px 90px 350px;
+}
+.pnt_banner_text h6 {
+    color: var(--main-paint-color);
+    font-size: 22px;
+    font-weight: 500;
+}
+.pnt_banner_text h6 {
+    color: var(--main-paint-color);
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 24px;
+}
+.pnt_banner_text h2 {
+    font-size: 62px;
+    font-weight: 700;
+}
+.pnt_banner_text .pnt_btn {
+    margin-top: 11px;
+}
+/********************************************************
+    6. Call To Action CSS Start
+********************************************************/
+.pnt_action_section {
+    background: var(--main-bg-color);
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.08);
+    padding: 50px 30px 41px 30px;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+    position: relative;
+}
+.pnt_action_section.center {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+    z-index: 1;
+    padding: 60px 30px 51px 30px;
+}
+.pnt_action_section, .pnt_action_section:hover {
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.pnt_action_section h3 {
+    font-weight: 700;
+    font-size: 28px;
+    padding: 0 0 14px;
+    margin: 25px 0 14px;
+    position: relative;
+}
+.pnt_callToAction_wrapper {
+    margin-top: -155px;
+}
+.pnt_action_section h3:before, .pnt_action_section h3:after {
+    content: "";
+    background: var(--main-paint-color);
+    position: absolute;
+    height: 2px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.pnt_action_section h3:before {
+    width: 150px;
+    bottom: 6px;
+}
+.pnt_action_section h3:after {
+    width: 105px;
+    bottom: 0;
+}
+/********************************************************
+    7. About CSS Start
+********************************************************/
+.pnt_about_section {
+    padding: 80px 0 0;
+}
+.pnt_about_detail h2 {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 11px;
+}
+.pnt_about_detail h2 span {
+    font-weight: 300;
+}
+.pnt_about_detail ul li {
+    padding-left: 90px;
+    position: relative;
+    margin-bottom: 21px;
+}
+.pnt_about_detail ul li:first-child {
+    margin: 31px 0 21px 0;
+}
+.pnt_about_detail ul li .pnt_icon_bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.pnt_about_img {
+    background: url(../images/index2/about_bg.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+}
+.pnt_about_section .row {
+    align-items: flex-end;
+}
+.pnt_about_detail ul {
+    margin-bottom: 50px;
+    display: inline-block;
+}
+.pnt_about_detail .pnt_subHeading {
+    line-height: 22px;
+    margin-bottom: 4px;
+}
+/********************************************************
+    8. Counter CSS Start
+********************************************************/
+.pnt_counter_wrapper {
+    background: url(../images/index2/counter_bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+    padding: 80px 0 50px;
+}
+.pnt_counter_wrapper:before {
+    content: "";
+    position: absolute;
+    background: rgba(0, 0, 0, 0.85);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.pnt_counter_icon img {
+    height: 40px;
+}
+.counter_item {
+    margin-bottom: 22px;
+}
+.counter_item h2 {
+    font-size: 42px;
+    font-weight: 700;
+    color: var(--main-bg-color);
+}
+.counter_item p {
+    font-size: 18px;
+    color: var(--main-bg-color);
+}
+.pnt_counter_icon {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    line-height: 96px;
+    border: 3px solid var(--main-gym-text);
+    border-radius: 50%;
+    margin-bottom: 16px;
+    display: block;
+    cursor: text;
+}
+.pnt_counter_icon:after {
+    position: absolute;
+    content: "";
+    width: 100px;
+    height: 100px;
+    border-radius: 50px 50px 50px 50px;
+    border: 3px solid var(--main-bg-color);
+    background: transparent;
+    left: -3px;
+    top: -3px;
+}
+.pnt_counter_icon:before {
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background:  var(--main-bg-color);
+}
+.pnt_counter_icon.pnt_counter_one:after {
+    -webkit-transform: rotate(-140deg);
+    -moz-transform: rotate(-140deg);
+    -ms-transform: rotate(-140deg);
+    -o-transform: rotate(-140deg);
+    transform: rotate(-140deg);
+    clip: rect(0px 85px 150px 0px);
+}
+.pnt_counter_icon.pnt_counter_one:before {
+    left: -6px;
+    top: 40px;
+}
+.pnt_counter_icon.pnt_counter_two:after {
+    -webkit-transform: rotate(-176deg);
+    -moz-transform: rotate(-176deg);
+    -ms-transform: rotate(-176deg);
+    -o-transform: rotate(-176deg);
+    transform: rotate(-176deg);
+    clip: rect(0px 60px 150px 0px);
+}
+.pnt_counter_icon.pnt_counter_two:before {
+    left: 26px;
+    bottom: -3px;
+}
+.pnt_counter_icon.pnt_counter_three:after {
+    -webkit-transform: rotate(-122deg);
+    -moz-transform: rotate(-122deg);
+    -ms-transform: rotate(-122deg);
+    -o-transform: rotate(-122deg);
+    transform: rotate(-122deg);
+    clip: rect(0px 95px 150px 0px);
+}
+.pnt_counter_icon.pnt_counter_three:before {
+    left: 5px;
+    top: 10px;
+}
+.pnt_counter_icon.pnt_counter_four:after {
+    -webkit-transform: rotate(-130deg);
+    -moz-transform: rotate(-130deg);
+    -ms-transform: rotate(-130deg);
+    -o-transform: rotate(-130deg);
+    transform: rotate(-130deg);
+    clip: rect(0px 91px 150px 0px);
+}
+.pnt_counter_icon.pnt_counter_four:before {
+    left: -3px;
+    top: 26px;
+}
+/********************************************************
+    9. Service CSS Start
+********************************************************/
+.pnt_services_section {
+    padding: 75px 0 30px;
+}
+.pnt_services {
+    margin-bottom: 45px;
+}
+.pnt_services_section .pnt_icon_bg {
+    border-radius: 50% 50% 0% 50%;
+    margin-bottom: 12px;
+}
+.pnt_services p {
+    margin: 3px 0 0 0;
+}
+.pnt_readMoreBtn {
+    color: var(--main-paint-color);
+    font-weight: 500;
+    display: inline-block;
+    position: relative;
+}
+.pnt_readMoreBtn:before {
+    content: "";
+    position: absolute;
+    bottom: 5px;
+    background: var(--main-paint-color);
+    width: 100%;
+    height: 1px;
+    opacity: .6;
+}
+/********************************************************
+    10. Quote CSS Start
+********************************************************/
+.pnt_quote_wrapper {
+    background: url(../images/index2/quote_bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+    padding: 75px 0 0;
+}
+.pnt_quote_wrapper:before {
+    content: "";
+    position: absolute;
+    background: rgba(0, 0, 0, 0.85);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.pnt_quote_wrapper .row {
+    align-items: flex-end;
+}
+.pnt_quote_form {
+    padding-bottom: 11px;
+}
+.pnt_field_inner {
+    width: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.60);
+    background: transparent;
+    height: 50px;
+    padding: 0 15px;
+    color: var(--main-bg-color);
+}
+textarea.pnt_field_inner {
+    height: 130px;
+    padding: 12px 15px;
+    margin-bottom: 21px;
+}
+.pnt_field_inner:focus {
+    border-color: var(--main-bg-color);
+}
+.pnt_field_inner, .pnt_field_inner:focus {
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+/********************************************************
+    11. FAQ's CSS Start
+********************************************************/
+.pnt_faq_wrapper {
+    padding: 80px 0 50px;
+}
+.pnt_faqs_section a {
+    position: relative;
+    display: flex;
+}
+.pnt_faqs_section a:before {
+    position: absolute;
+    content: "";
+    background: rgba(0, 0, 0, 0.60);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.video_icon svg {
+    width: 18px;
+    fill: var(--main-bg-color);
+}
+.video_icon {
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    display: inline-block;
+    background-image: -webkit-linear-gradient(top, var(--main-paint-color1), var(--main-paint-color2));
+    border-radius: 100%;
+    text-align: center;
+    margin-left: 30px;
+    animation: shadow-pulse 2s infinite;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.video_icon svg {
+    width: 18px;
+    fill: var(--main-bg-color);
+}
+@keyframes shadow-pulse {
+    0% {
+        box-shadow: 0 0 0 0  rgba(55, 183, 218, 0.2);
+    }
+    100% {
+        box-shadow: 0 0 0 25px rgba(55, 183, 218, 0);
+    }
+}
+@keyframes shadow-pulse-big {
+    0% {
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.3);
+    }
+    100% {
+        box-shadow: 0 0 0 50px rgba(255, 255, 255, 0);
+    }
+}
+.pnt_faq_wrapper .row {
+    align-items: center;
+}
+.pnt_faqs_question .pnt_heading h2 {
+    margin-bottom: 32px;
+}
+.faq_list li {
+    padding: 0 0 11px;
+    border-bottom: 1px solid var(--main-border-color);
+    margin-bottom: 15px;
+}
+.faq_list li:last-child {
+    border-bottom: none;
+    margin: 0;
+    padding: 0;
+}
+.faq_list li > div {
+    padding: 3px 0 0px 20px;
+}
+.faq_list li a {
+    display: inline-block;
+    padding: 0 15px 0 20px;
+    position: relative;
+}
+.faq_list li a h3 {
+    font-size: 20px;
+    font-weight: normal;
+}
+.faq_list li a i {
+    position: absolute;
+    left: 0;
+    width: 20px;
+    top: 2px;
+    font-weight: 700;
+}
+.faq_list li a.collapsed h3 {
+    color: var(--main-link-color);
+}
+.faq_list li a h3 {
+    color: var(--main-paint-color);
+}
+.faq_list li a i:before {
+    content: "\f107";
+    color: var(--main-paint-color);
+}
+.faq_list li a.collapsed i:before {
+    content: "\f105";
+    color: var(--main-link-color);
+}
+/********************************************************
+    12. Testimonial CSS Start
+********************************************************/
+.pnt_testimonial_wrapper {
+    background: url(../images/index2/testimonial_bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+    padding: 75px 0 130px;
+}
+.pnt_testimonial_wrapper:before {
+    content: "";
+    position: absolute;
+    background: rgba(0, 0, 0, 0.85);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: inline-block;
+}
+.pnt_testimonials_section {
+    padding: 0 30px;
+    position: relative;
+}
+.pnt_testimonials_section:before {
+    position: absolute;
+    content: "";
+    background: var(--main-bg-color);
+    left: 0;
+    right: 0;
+    bottom: 20px;
+    top: 20px;
+}
+.pnt_testimonials_section .swiper-container {
+    margin: 0 0 -50px;
+}
+.pnt_testimonial_section {
+    padding: 0 60px;
+}
+.pnt_testimonial_inner {
+    background: var(--main-bg-color);
+    padding: 50px 50px 41px;
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.08);
+    display: inline-block;
+}
+.pnt_client_img {
+    width: 80px;
+    margin: auto;
+    height: 80px;
+}
+.pnt_client_img img {
+    width: 80px;
+    object-fit: fill;
+    height: 80px;
+    border: none;
+    border-radius: 100%;
+}
+.pnt_testimonial_button {
+    position: absolute;
+    top: 80px;
+    z-index: 1;
+    width: 170px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.pnt_testimonial_button > div {
+    width: 50px;
+    font-size: 22px;
+    position: absolute;
+    cursor: pointer;
+    opacity: .6;
+}
+.pnt_testimonial_button > div:before {
+    content: "";
+    position: absolute;
+    background: var(--main-txt-color);
+    width: 18px;
+    height: 2px;
+    top: 11px;
+    opacity: .6;
+}
+.testTwoButtonPrev {
+    left: 0;
+}
+.testTwoButtonNext {
+    right: 0;
+    text-align: right;
+}
+.testTwoButtonNext:before {
+    right: 1px;
+}
+.pnt_testimonial_button > div:hover {
+    color: var(--main-paint-color);
+    opacity: 1;
+}
+.pnt_testimonial_button > div:hover:before {
+    background: var(--main-paint-color);
+    width: 30px;
+    opacity: 1;
+}
+.pnt_client_quote h4 {
+    margin: 12px 0 8px;
+    font-weight: 700;
+    font-size: 20px;
+}
+.testTwoButtonPrev:hover {
+    left: -15px;
+}
+.testTwoButtonNext:hover {
+    right: -15px;
+}
+.pnt_testimonial_button, .pnt_testimonial_button:hover, .pnt_testimonial_button > div:hover, .pnt_testimonial_button > div, .pnt_testimonial_button > div:hover:before, .pnt_testimonial_button > div:before {
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+/********************************************************
+    13. Steps CSS Start
+********************************************************/
+.pnt_steps_wrapper {
+    padding: 75px 0 50px;
+}
+.pnt_steps_section {
+    position: relative;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+.pnt_steps_section:before {
+    position: absolute;
+    content: "";
+    background: var(--main-bg-color);
+    right: 20px;
+    left: 20px;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.08);
+}
+.pnt_steps_section:hover:before {
+    top: 20px;
+    bottom: 20px;
+}
+.pnt_steps {
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.08);
+    background: var(--main-bg-color);
+    padding: 50px 20px 45px;
+    margin: 0 -20px;
+}
+.pnt_step_count {
+    margin-bottom: 12px;
+    display: inline-block;
+    width: 100%;
+    background: url(../images/index2/step_bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.pnt_step_count .pnt_step_name {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--main-paint-color);
+    display: block;
+}
+.pnt_step_count .pnt_step_counting {
+    font-size: 52px;
+    line-height: 50px;
+    color: var(--main-paint-color);
+    font-weight: 900;
+    display: block;
+}
+.pnt_steps p {
+    margin: 3px 0 5px;
+}
+.pnt_steps_section:hover:before, .pnt_steps_section:hover, .pnt_steps_section:before, .pnt_steps_section {
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+/********************************************************
+    14. Call To Action Second CSS Start
+********************************************************/
+.pnt_callToActionSecond_wrapper {
+    position: relative;
+    background: url(../images/index2/callToAction2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    padding: 67px 0 71px;
+}
+.pnt_callToActionSecond_wrapper:before {
+    content: "";
+    position: absolute;
+    background: rgba(0, 0, 0, 0.85);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: inline-block;
+}
+.pnt_callToActionSecond_text h2 {
+    font-size: 52px;
+    font-weight: 500;
+    line-height: 65px;
+}
+.pnt_callToActionSecond_text h6 {
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 30px;
+}
+.pnt_callToActionSecond_text .pnt_btn {
+    margin-top: 21px;
+    color: var(--main-link-color);
+}
+.pnt_callToActionSecond_text .pnt_btn:hover {
+    color: var(--main-bg-color);
+}
+/********************************************************
+    15. Blog CSS Start
+********************************************************/
+.pnt_blog_wrapper {
+    padding: 75px 0 50px;
+}
+.pbt_blog_info {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 24px 0 3px;
+}
+.pnt_blog_img img {
+    width: 100%;
+}
+.pbt_blog_info li {
+    position: relative;
+    padding-left: 8px;
+    margin-left: 8px;
+}
+.pbt_blog_info li a {
+    color: var(--main-txt-color);
+}
+.pbt_blog_info li a:hover {
+    color: var(--main-paint-color);
+}
+.pbt_blog_info li:first-child {
+    padding-left: 0;
+    margin-left: 0;
+}
+.pbt_blog_info li:first-child:before {
+    content: unset;
+}
+.pbt_blog_info li:before {
+    content: "";
+    position: absolute;
+    background: var(--main-txt-color);
+    width: 3px;
+    height: 3px;
+    border: none;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+}
+.pnt_blog_thumb p {
+    margin: 3px 0 0;
+}
+.pnt_blog_thumb {
+    margin-bottom: 25px;
+}
+/********************************************************
+    16. Contact CSS Start
+********************************************************/
+.pnt_contact_wrapper {
+    background: var(--main-bg-color);
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.08);
+}
+.pnt_contact_info_section {
+    position: relative;
+    padding: 40px 30px 40px 80px;
+    border: 1px solid var(--main-border-color);
+    margin-bottom: 30px;
+    background: var(--main-bg-color);
+}
+.pnt_contact_wrapper .pnt_heading h2 {
+    margin-bottom: 0;
+}
+.pnt_contact_section {
+    padding: 69px 65px 50px;
+    width: 100%;
+}
+.pnt_contact_info {
+    margin: 40px 0 20px 0;
+}
+.pnt_rtl_txt {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    text-align: center;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    color: var(--main-bg-color);
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 500;
+}
+.pnt_rtl_txt.address {
+    background: var(--main-paint-color);
+}
+.pnt_rtl_txt.phone {
+    background: var(--main-paint-color3);
+}
+.pnt_rtl_txt.main {
+    background: var(--main-paint-color4);
+}
+.pnt_contact_info_text b {
+    font-weight: 500;
+    color: var(--main-link-color);
+    margin-right: 6px;
+    display: inline-block;
+}
+.pnt_map iframe {
+    display: block;
+    width: 100%;
+    height: 745px;
+    margin: 0 auto;
+}
+
+/********************************************************
+    17. Footer CSS Start
+********************************************************/
+.pnt_footer_wrapper {
+    background: var(--main-link-color);
+    padding: 75px 0 36px;
+    color: var(--main-paint-footer);
+}
+.pnt_widgets ul li a {
+    color: var(--main-paint-footer);
+    position: relative;
+}
+.pnt_widgets ul li:hover a {
+    color: var(--main-paint-color);
+}
+.pnt_widgets ul li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 5px;
+}
+.pnt_widgets ul li:before {
+    position: absolute;
+    left: 0;
+    content: "";
+    width: 5px;
+    height: 5px;
+    border: none;
+    border-radius: 50%;
+    top: 50%;
+    background: var(--main-paint-footer);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.pnt_widgets ul li a:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background: var(--main-paint-color);
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+}
+.pnt_widgets ul li a:hover:after {
+    opacity: 0.6;
+}
+.pnt_widgets .pnt_sub_heading {
+    margin-bottom: 19px;
+}
+.pnt_widgets ul li a:hover:after, .pnt_widgets ul li a:after {
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.newsletter_wrap {
+    position: relative;
+    margin: 6px 0 12px;
+}
+.newsletter_wrap input {
+    background: var(--main-black1);
+    border: none;
+    width: 100%;
+    position: relative;
+    height: 50px;
+    padding: 0 65px 0 15px;
+    color: var(--main-bg-color);
+}
+.newsletter_wrap button {
+    background: var(--main-paint-color);
+    border: none;
+    color: var(--main-bg-color);
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 50px;
+}
+.pnt_copyright_wrapper {
+    background: var(--main-black-dark);
+    padding: 14px 0 11px;
+}
+.pnt_copyright_wrapper a {
+    color: var(--main-paint-color);
+}
+.pnt_widgets h6 {
+    font-size: 18px;
+    color: var(--main-bg-color);
+}
+.pnt_widgets h5 {
+    color: var(--main-bg-color);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 40px;
+}
+/********************************************************
+	18. Responsive CSS Start
+********************************************************/
+@media (min-width: 1200px) {
+    .pnt_callToAction_wrapper .container {
+        max-width: 1140px;
+    }
+    .pnt_widgets p {
+        width: 60%;
+    }
+}
+@media (min-width: 992px) {
+    ul.sub_menu {
+        top: 50px;
+    }
+}
+@media (max-width: 1600px) {
+    .pnt_contact_section {
+        padding: 56px 30px 37px;
+    }
+}
+@media (max-width: 1399px) {
+	.pnt_contact_section {
+        padding: 40px 0 21px;
+    }
+    .pnt_contact_wrapper .row {
+        align-items: center;
+    }
+}
+
+@media (max-width: 1199.98px) {
+    .pnt_header_info ul li {
+        margin-left: 10px;
+        font-size: 14px;
+        padding-left: 10px;
+    }
+    .pnt_about_section {
+        padding: 75px 0 0;
+    }
+    .pnt_faq_wrapper {
+        padding: 75px 0 41px;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+	.pnt_contact_info_section {
+        padding: 48px 20px 48px 70px;
+    }
+    .pnt_contact_section {
+        padding: 69px 0 50px;
+    }
+    .pbt_blog_info li {
+        padding-left: 6px;
+        margin-left: 6px;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .pnt_search_wrap ul.display_flex {
+        align-items: center;
+    }
+    .pnt_header_info {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+    .pnt_header_info ul {
+        justify-content: center;
+    }
+    .main_menu_wrapper li.has_submenu:before, .main_menu_wrapper li.has_submenu:after {
+        background: var(--main-paint-color);
+    }
+    .pnt_banner_text h2 {
+        font-size: 50px;
+    }
+    .pnt_about_detail h2, .pnt_heading h2 {
+        font-size: 30px;
+    }
+    .pnt_banner_wrapper {
+        padding: 147px 0 144px;
+    }
+    .pnt_callToAction_wrapper {
+        margin-top: 80px;
+    }
+    .pnt_callToAction_wrapper .p-0 {
+        padding: 0 15px !important;
+    }
+    .pnt_testimonial_inner {
+        padding: 50px 15px 41px;
+    }
+    .pnt_testimonial_section {
+        padding: 0;
+    }
+    .pnt_callToActionSecond_text h2 {
+        font-size: 32px;
+        line-height: 50px;
+    }
+    .pnt_header_top {
+        padding: 12px 0 2px;
+    }
+    .pnt_about_detail ul {
+        margin-bottom: 53px;
+    }
+    .pnt_faq_wrapper {
+        padding: 75px 0 44px;
+    }
+    .video_icon {
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+    }
+    .pnt_callToActionSecond_wrapper {
+        padding: 67px 0 74px;
+    }
+    .pnt_contact_section {
+        padding: 34px 0 50px;
+    }
+    .pnt_footer_wrapper {
+        padding: 75px 0 42px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .pnt_action_section { 
+        padding: 50px 15px 44px 15px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .pnt_header_info ul li {
+        margin-left: 0;
+        padding: 0;
+    }
+    .pnt_header_info_left ul li:before {
+        content: unset;
+    }
+    .pnt_contact_section {
+        padding: 24px 0 50px;
+    }
+    .pnt_contact_info_section {
+        padding: 49px 15px 48px 65px;
+    }
+    .pnt_about_section .row {
+        flex-direction: column-reverse;
+    }
+    .pnt_header_top {
+        padding: 14px 0 2px;
+    }
+    .pnt_action_section {
+        margin-bottom: 30px;
+    }
+    .pnt_about_section {
+        padding: 45px 0 0;
+    }
+    .pnt_counter_wrapper {
+        padding: 80px 0 53px;
+    }
+    .pnt_faq_wrapper {
+        padding: 80px 0 44px;
+    }
+    .pnt_faqs_question {
+        margin-top: -5px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .menu_btn {
+        padding: 15px 0 0;
+    }
+    .counter_item {
+        margin-bottom: 35px;
+    }
+}

@@ -1,0 +1,2171 @@
+/*--------------------- Copyright (c) 2020 ----------------------- 
+[Master Stylesheet] 
+Project: Multifarious GYM
+Version: 1.0.0 
+Author: Kamleshyadav
+ ------------------------------------------------------------------- 
+[Table of contents] 
+	1. Global CSS Start
+	2. Comman CSS Start
+    3. Preloader CSS Start
+    4. Header CSS Start
+    5. Banner CSS Start
+    6. Call To Action CSS Start
+    7. About CSS Start
+    8. Service CSS Start
+    9. Price CSS Start
+    10. Gallery CSS Start
+    11. Team CSS Start
+    12. Testimonial CSS Start
+    13. Blog CSS Start
+    14. Footer CSS Start
+    15. Responsive CSS Start
+-------------------------------------------------------------------*/
+
+/********************************************************
+    1. Global CSS Start
+********************************************************/
+body {
+    color: var(--main-txt-color);
+    background: var(--main-bg-color);
+    font-family: 'Yantramanav', sans-serif;
+}
+a, a:hover, a:focus {
+	color: var(--main-brown-version2);
+}
+h1, h2, h3, h4, h5, h6 {
+    color: var(--main-brown-version2);
+    font-weight: 500;
+    font-family: 'Playfair Display', serif;
+}
+/********************************************************
+    2. Comman CSS Start
+********************************************************/
+.sal_color {
+    color: var(--main-brown-version2);
+}
+.sal_btn, .sal_btn:hover {
+    font-size: 16px;
+    color: var(--main-bg-color);
+    line-height: 50px;
+    display: inline-block;
+    background: var(--main-gray-version27);
+    text-transform: capitalize;
+    padding: 0px 12px;
+    position: relative;
+    min-width: 170px;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    min-height: 50px;
+}
+.sal_btn:before {
+    content: "";
+    background: var(--main-brown-version2);
+    width: 4px;
+    height: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    left: 0;
+}
+.sal_btn:after {
+    content: "";
+    position: absolute;
+    right: -11px;
+    background: var(--main-gray-version27);
+    width: 20px;
+    bottom: 0;
+    top: 0;
+    -webkit-transform: skewX(-15deg);
+    -moz-transform: skewX(-15deg);
+    -ms-transform: skewX(-15deg);
+    -o-transform: skewX(-15deg);
+    transform: skewX(-15deg);
+}
+.sal_btn span {
+    width: 15px;
+    height: 1px;
+    background: var(--main-brown-version2);
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 8px;
+}
+.sal_btn.left_skew {
+    padding: 0px 20px 0px 0px;
+}
+.sal_btn.left_skew:before {
+    left: unset;
+    right: 0;
+}
+.sal_btn.left_skew:after {
+    left: -11px;
+    right: unset;
+    -webkit-transform: skewX(-15deg);
+    -moz-transform: skewX(-15deg);
+    -ms-transform: skewX(-15deg);
+    -o-transform: skewX(-15deg);
+    transform: skewX(-15deg);
+}
+.sal_btn.left_skew span {
+    margin-right: 8px;
+}
+.sal_btn:hover, .sal_btn:hover:after, .sal_banner_button > div:hover {
+    background: var(--main-brown-version2);
+}
+.sal_btn:hover:before, .sal_btn:hover span, .sal_banner_button > div:hover:before {
+    background: var(--main-bg-color);
+}
+.sal_btn:hover:after, .sal_btn:after, .sal_btn:hover:before, .sal_btn:before, .sal_banner_button > div:hover {
+    -webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
+.sal_title {
+    font-size: 22px;
+    letter-spacing: 6px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+}
+.sal_heading_wrapper {
+    width: 56%;
+    margin: 0px auto 41px;
+    font-family: 'Playfair Display', serif;
+}
+.sal_heading_wrapper h2 {
+    color: var(--main-link-color);
+    font-size: 36px;
+}
+.sal_heading {
+    font-size: 42px;
+    font-weight: 700;
+    position: relative;
+    padding: 0;
+    font-style: italic;
+    line-height: 50px;
+}
+.sal_subHeading {
+    color: var( --main-link-color);
+    font-size: 32px;
+    font-weight: 700;
+    position: relative;
+    padding: 0;
+    margin: 0 0 17px;
+    display: inline-block;
+    width: 100%;
+    line-height: 40px;
+}
+#scroll {
+    background: var(--main-brown-version2);
+    color: var(--main-bg-color);
+}
+/********************************************************
+    3. Preloader CSS Start
+********************************************************/
+.preloader_active .preloader_holder {
+    background-color: var(--main-bg-color);
+}
+.preloader_active .preloader_holder .preloader span {
+    box-shadow: 0px 0px 0px 0px var(--main-brown-version2);
+}
+@-webkit-keyframes loadingCircles{
+    0%{-webkit-transform: scale(0); opacity: 1; box-shadow: 0px 0px 0px 10px var(--main-brown-version2);}
+    100%{-webkit-transform: scale(1); opacity: 0; box-shadow: 0px 0px 0px 2px var(--main-brown-version2);}
+}
+@-moz-keyframes loadingCircles{
+    0%{-moz-transform: scale(0); opacity: 1; box-shadow: 0px 0px 0px 10px var(--main-brown-version2);}
+    100%{-moz-transform: scale(1); opacity: 0; box-shadow: 0px 0px 0px 2px var(--main-brown-version2);}
+}
+@keyframes loadingCircles{
+    0%{transform: scale(0); opacity: 1; box-shadow: 0px 0px 0px 10px var(--main-brown-version2);}
+    100%{transform: scale(1); opacity: 0; box-shadow: 0px 0px 0px 2px var(--main-brown-version2);}
+}
+.preloader_open:before, .preloader_open:after {
+    background-color: var(--main-bg-color);
+}
+/********************************************************
+    4. Header CSS Start
+********************************************************/
+.sal_header_wrapper {
+    padding: 20px 0 0;
+}
+.searchBtn, .searchBtn:focus, .searchBtn:hover {
+    color: var(--main-bg-color);
+    padding-left: 10px;
+}
+.sal_search_wrap .display_flex {
+    align-items: center;
+}
+.sal_search_wrap .display_flex li {
+    display: flex;
+}
+.main_menu_wrapper ul > li a {
+    font-family: 'Playfair Display', serif;
+}
+/********************************************************
+    5. Banner CSS Start
+********************************************************/
+.sal_banner_section {
+    background-color: var(--main-border-color);
+    padding: 357px 0 279px;
+    position: relative;
+    font-family: 'Playfair Display', serif;
+    color: var(--main-gray-version25);
+}
+.sal_banner_section:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(19, 19, 23, 0.9);
+}
+.sal_banner_section.slide1 {
+    background-image: url(../images/index9/slide1.jpg);
+}
+.sal_banner_section.slide2 {
+    background-image: url(../images/index9/slide2.jpg);
+}
+.sal_banner_section.slide3 {
+    background-image: url(../images/index9/slide3.jpg);
+}
+.sal_banner_section.slide1, .sal_banner_section.slide2, .sal_banner_section.slide3 {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.sal_banner_text h1 {
+    font-size: 72px;
+    color: var(--main-bg-color);
+    font-weight: 400;
+    margin: 0 0 16px;
+    line-height: 75px;
+}
+.sal_banner_text .sal_btn {
+    margin-top: 23px;
+    padding-left: 30px;
+}
+.sal_banner_button {
+    position: absolute;
+    right: 0;
+    width: 210px;
+    display: inline-block;
+    bottom: 120px;
+}
+.sal_banner_button > div {
+    background: var(--main-gray-version27);
+    color: var(--main-bg-color);
+    width: 90px;
+    height: 50px;
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: capitalize;
+    cursor: pointer;
+    font-family: 'Playfair Display', serif;
+    padding: 0 15px 0 0;
+}
+.sal_banner_button > div > span {
+    width: 12px;
+    height: 1px;
+    background: var(--main-brown-version2);
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+.ButtonPrev span {
+    right: 20px;
+}
+.ButtonNext span {
+    left: 20px;
+}
+.sal_banner_button > div.ButtonNext {
+    padding: 0 0 0 15px;
+}
+.sal_banner_button > div:before {
+    content: "";
+    background: var(--main-brown-version2);
+    width: 4px;
+    height: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+.ButtonPrev:before {
+    left: 0;
+}
+.ButtonPrev:after {
+    content: "";
+    position: absolute;
+    right: -20px;
+    bottom: 0;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-left: 20px solid var(--main-gray-version27);
+    border-top: 50px solid transparent;
+}
+.ButtonNext:after {
+    content: "";
+    position: absolute;
+    left: -20px;
+    bottom: 0;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-top: 0 solid transparent;
+    border-right: 20px solid var(--main-gray-version27);
+    border-bottom: 50px solid transparent;
+}
+.ButtonNext:before {
+    right: 0;
+}
+.sal_banner_button > div:hover:before, .sal_banner_button > div:hover > span {
+    background: var(--main-bg-color);
+}
+.sal_banner_button > div:hover {
+    color: var(--main-bg-color);
+}
+.ButtonNext:hover:after {
+    border-right: 20px solid var(--main-brown-version2);
+}
+.ButtonPrev:hover:after {
+    border-left: 20px solid var(--main-brown-version2);
+}
+.ButtonPrev {
+    left: 0;
+    padding: 0 3px 0 0;
+}
+.ButtonNext {
+    right: 0;
+    padding: 0 2px 0 0;
+}
+.sal_banner_wrapper .pagination {
+    position: absolute;
+    bottom: 54px;
+    z-index: 1;
+    width: 100%;
+    justify-content: center;
+}
+.sal_banner_wrapper .pagination .swiper-pagination-bullet {
+    border: 1px solid var(--main-gray-version28);
+    opacity: 1;
+    width: 12px;
+    height: 12px;
+    line-height: 20px;
+    display: inline-block;
+    border-radius: 0;
+    margin: 0 6px;
+    background: transparent;
+    position: relative;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.sal_banner_wrapper .pagination .swiper-pagination-bullet:before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 1px;
+    right: 0px;
+    margin: auto;
+}
+.sal_banner_wrapper .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    border-color: var(--main-brown-version2);
+}
+.sal_banner_wrapper .swiper-pagination-bullet.swiper-pagination-bullet-active:before {
+    background: var(--main-brown-version2);
+}
+.sal_banner_button > div, .sal_banner_button > div:hover, .sal_banner_button > div:before, .sal_banner_button > div:hover:before, .sal_banner_button > div:hover:after, .sal_banner_button > div:after {
+    -webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
+/********************************************************
+    6. Call To Action CSS Start
+********************************************************/
+.sal_openTime_wrapper {
+    width: 100%;
+    font-family: 'Playfair Display', serif;
+}
+.sal_contant_info_section {
+    position: relative;
+}
+.sal_contant_info_section > img {
+    object-fit: cover;
+    width: 100%;
+    min-height: 430px;
+}
+.sal_info_icon svg {
+    width: 25px;
+    height: 25px;
+    fill: var(--main-brown-version2);
+}
+.sal_contant_info li {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin-bottom: 35px;
+}
+.sal_contant_info li:last-child {
+    margin-bottom: 0;
+}
+.sal_info_icon {
+    width: 50px;
+    margin-top: 8px;
+}
+.sal_info_text {
+    width: calc(100% - 50px);
+}
+.sal_contant_info_section.sal_info_center {
+    padding: 73px 15px 82px;
+    background: url(../images/index9/callNow_bg.png);
+    background-size: 85%;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.16);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sal_contant_info {
+    margin: auto;
+    width: 75%;
+}
+.sal_info_num {
+    display: inline-block;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 46px;
+}
+.sal_contant_info_title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px 15px;
+    text-align: center;
+    background: var(--main-black7);
+}
+.sal_contant_info_title h4 {
+    color: var(--main-bg-color);
+    font-size: 36px;
+    font-weight: 700;
+    padding: 13px 0 18px;
+}
+.sal_contant_info_hover img {
+    object-fit: unset;
+    width: auto;
+}
+.sal_contant_info_hover {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    bottom: 30px;
+    right: 30px;
+    margin: auto;
+    background: var(--main-black7);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    visibility: hidden;
+    opacity: 0;
+}
+.sal_contant_info_hover h4 {
+    color: var(--main-bg-color);
+    font-size: 36px;
+    font-weight: 700;
+}
+.sal_service_info {
+    width: 100%;
+    display: inline-block;
+}
+.sal_service_info img {
+    margin: 24px 0 20px;
+    max-height: 50px;
+}
+.sal_contant_info_section:hover .sal_contant_info_title {
+    visibility: hidden;
+    opacity: 0;
+}
+.sal_contant_info_section:hover .sal_contant_info_hover {
+    visibility: visible;
+    opacity: 1;
+}
+.sal_contant_info_section, .sal_contant_info_section:hover, .sal_contant_info_title, .sal_contant_info_hover {
+    -webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
+.sal_service_wrapper .sal_heading_wrapper {
+    margin-bottom: 43px;
+}
+/********************************************************
+    7. About CSS Start
+********************************************************/
+.sal_about_wrapper {
+    background: var(--main-bg-color);
+    padding: 80px 0 50px;
+}
+.sal_about_detail {
+    padding: 0 20px 0 140px;
+    width: 80%;
+    font-family: 'Playfair Display', serif;
+    position: relative;
+    margin: 38px 0 0;
+}
+.sal_about_heading {
+    margin-bottom: 20px;
+}
+.sal_about_detail h1 {
+    font-size: 42px;
+    color: var(--main-link-color);
+    line-height: 54px;
+    margin: 5px 0 6px 0;
+}
+.sal_about_detail .sal_btn {
+    background: var(--main-gym-bg);
+    color: var(--main-link-color);
+    min-width: 150px;
+    margin: 23px 0 34px;
+    padding: 0px 0 0 15px;
+}
+.sal_about_detail .sal_btn:after {
+    background: var(--main-gym-bg);
+}
+.sal_about_detail .sal_btn span {
+    background: var(--main-brown-version2);
+}
+.sal_about_detail .sal_btn:hover, .sal_about_detail .sal_btn:hover:after, .sal_about_detail .sal_btn:hover:before {
+    background: var(--main-brown-version2);
+    color: var(--main-bg-color);
+}
+.sal_about_detail .sal_btn:hover span {
+    background: var(--main-bg-color);
+}
+.sal_about_detail h5 {
+    font-size: 22px;
+    color: var(--main-link-color);
+    line-height: 30px;
+    font-weight: 700;
+}
+.sal_about_num {
+    font-size: 38px;
+    font-weight: 700;
+    margin-top: 8px;
+    display: inline-block;
+    line-height: 50px;
+}
+.sal_about_vertical_area {
+    position: absolute;
+    writing-mode: tb-rl;
+    transform: rotate(180deg);
+    font-size: 90px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    text-align: center;
+    left: 36px;
+    color: var(--main-gray-version29);
+    font-weight: 700;
+}
+.aboutImg {
+    padding: 0 0 50px;
+    margin-bottom: 30px;
+}
+.sal_about_img img {
+    z-index: 1;
+    position: relative;
+}
+.aboutImg:before {
+    content: "";
+    border: 12px solid var(--main-gray-version30);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 60px;
+    background: var(--main-bg-color);
+    top: 0;
+    z-index: 0;
+    border-left: 0;
+    border-top: 0;
+}
+.sal_about_wrapper .sal_about_button {
+    width: 100%;
+    margin: auto;
+    position: relative;
+    display: inline-block;
+    margin-top: 8px;
+    padding: 0 0 0 15px;
+}
+.sal_about_inner {
+    display: flex;
+    width: 80px;
+    justify-content: space-between;
+}
+.sal_about_wrapper .sal_about_button > div > div {
+    width: 20px;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+}
+.sal_about_wrapper .sal_about_button > div > div svg {
+    fill: var(--main-gray-version19);
+}
+.sal_about_wrapper .sal_about_button > div > div:hover svg {
+    fill: var(--main-brown-version2);
+}
+.sal_about_wrapper .sal_about_button > div > div:hover {
+    width: 35px;
+}
+.NextImg {
+    text-align: right;
+}
+.PrevImg svg {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+.sal_about_wrapper .sal_about_button > div > div:before {
+    content: "";
+    background: var(--main-brown-version2);
+    width: 15px;
+    position: absolute;
+    height: 2px;
+    border: none;
+    top: 12px;
+    border-radius: 6px;
+    opacity: 0;
+}
+.sal_about_wrapper .sal_about_button > div > div:hover:before {
+    opacity: 1;
+}
+.sal_about_wrapper .sal_about_button > div > div svg {
+    width: 20px;
+    height: 20px;
+}
+.PrevImg:before {
+    right: 2px;
+}
+.NextImg:before {
+    left: 2px;
+}
+.sal_about_wrapper .sal_about_button > div > div:before, .sal_about_wrapper .sal_about_button > div > div:hover:before, .sal_about_wrapper .sal_about_button > div > div:hover svg, .sal_about_wrapper .sal_about_button > div > div svg, .sal_about_wrapper .sal_about_button > div > div, .sal_about_wrapper .sal_about_button > div > div:hover {
+    -webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+/********************************************************
+    8. Service CSS Start
+********************************************************/
+.sal_service_wrapper {
+    position: relative;
+    background: url(../images/index9/service_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    padding: 69px 0 0;
+}
+.sal_service_wrapper:before {
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    background: rgba(19, 19, 23, 0.9);
+}
+.sal_heading_wrapper {
+    color: var(--main-gray-version25);
+}
+.sal_service_section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 70px;
+}
+.sal_service_text {
+    background: rgba(255, 255, 255, 0.06);
+    min-height: 92px;
+    width: calc(100% - 90px);
+    position: relative;
+    margin-left: 30px;
+    margin-right: 60px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 100px 0 0;
+}
+.sal_service_text:before {
+    content: "";
+    position: absolute;
+    border-bottom: 46px solid transparent;
+    border-top: 46px solid transparent;
+    border-right: 30px solid rgba(255, 255, 255, 0.06);
+    left: -30px;
+}
+.sal_service_text:after {
+    content: "";
+    position: absolute;
+    border-bottom: 46px solid transparent;
+    border-top: 46px solid transparent;
+    border-right: 30px solid transparent;
+    right: -30px;
+}
+.sal_service_icon {
+    position: absolute;
+    right: 30px;
+    width: 90px;
+    height: 90px;
+    line-height: 90px;
+    text-align: center;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    z-index: 1;
+}
+.sal_service_icon:before {
+    content: "";
+    position: absolute;
+    border: 1px solid var(--main-gray-version32);
+    top: -6px;
+    bottom: 6px;
+    left: 6px;
+    right: -6px;
+    z-index: 0;
+}
+.sal_service_text > a {
+    font-size: 26px;
+    display: inline-block;
+    color: var(--main-bg-color);
+    font-family: 'Playfair Display', serif;
+}
+.sal_service_icon span {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+    background: var(--main-brown-version2);
+}
+.sal_service_icon svg {
+    fill: var(--main-bg-color);
+    height: 50px;
+    width: 50px;
+    -webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+.sal_service_holder {
+    padding: 0 0 0 120px;
+    position: relative;
+}
+.sal_service_vertical_area {
+    position: absolute;
+    writing-mode: tb-rl;
+    -webkit-transform: rotate(180deg);
+	-moz-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	-o-transform: rotate(180deg);
+    transform: rotate(180deg);
+    font-size: 52px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    text-align: center;
+    left: 36px;
+    color: var(--main-bg-color);
+    font-weight: 700;
+    font-family: 'Playfair Display', serif;
+    opacity: 0.2;
+}
+.sal_service_text:hover {
+    background: var(--main-bg-color);
+}
+.sal_service_text:hover:before {
+    border-right-color: var(--main-bg-color);
+}
+.sal_service_text:hover a {
+    color: var(--main-link-color);
+}
+.sal_service_text, .sal_service_text:hover, .sal_service_text a, .sal_service_text:hover a, .sal_service_text:before, .sal_service_text:after, .sal_service_text:hover:before, .sal_service_text:hover:after {
+    -webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
+.sal_service_holder.sal_service_right {
+    padding: 0 120px 0 0;
+}
+.sal_service_holder.sal_service_right .sal_service_vertical_area {
+    left: unset;
+    right: 36px;
+}
+.sal_service_holder.sal_service_right .sal_service_text {
+    margin-left: 60px;
+    margin-right: 30px;
+    padding: 0 0 0 100px;
+    justify-content: flex-start;
+}
+.sal_service_holder.sal_service_right .sal_service_icon {
+    right: unset;
+    left: 30px;
+}
+.sal_service_holder.sal_service_right .sal_service_text:before {
+    left: unset;
+    right: -30px;
+    border-left: 30px solid rgba(255, 255, 255, 0.06);
+    border-right: 0;
+}
+.sal_service_holder.sal_service_right .sal_service_text:after {
+    left: -30px;
+    right: unset;
+}
+.sal_service_holder.sal_service_right .sal_service_icon:before {
+    top: 6px;
+    right: 6px;
+    left: -6px;
+    bottom: -6px;
+}
+.sal_service_holder.sal_service_right .sal_service_text:hover:before {
+    border-left: 30px solid var(--main-bg-color);
+}
+.sal_service_holder {
+    margin-bottom: 98px;
+}
+.sal_service_wrapper .container-fluid .row {
+    align-items: flex-end;
+}
+.sal_service_wrapper .sal_heading_wrapper h2 {
+    color: var(--main-bg-color);
+}
+/********************************************************
+    9. Price CSS Start
+********************************************************/
+.sal_price_wrapper {
+    background: var(--main-bg-color);
+    padding: 69px 0 39px;
+    font-family: 'Playfair Display', serif;
+}
+.sal_pricing_section {
+    border: 10px solid var(--main-gray-version33);
+    padding: 40px 40px 33px;
+    background: var(--main-bg-color);
+    margin: 2px 0 30px 0;
+}
+.sal_pricing_title h4 {
+    color: var(--main-link-color);
+    font-size: 22px;
+    padding-right: 100px;
+    margin-bottom: 5px;
+}
+.sal_pricing_title .sal_price {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-weight: 700;
+    color: var(--main-link-color);
+    font-size: 22px;
+}
+.sal_pricing_list {
+    display: inline-block;
+    width: 100%;
+    border-bottom: 2px dotted var(--main-brown-version2);
+    margin-bottom: 24px;
+    padding-bottom: 23px;
+}
+.sal_pricing_list:last-of-type {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.sal_primium_section .sal_pricing_section {
+    color: var(--main-bg-color);
+    border: none;
+    background: url(../images/index9/price_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    margin-right: -20px;
+    margin-left: -20px;
+    z-index: 1;
+}
+.sal_price_wrapper .container-fluid .row {
+    align-items: center;
+}
+.sal_primium_section .sal_pricing_section .sal_pricing_list {
+    border-bottom-color: var(--main-bg-color);
+}
+.sal_primium_section .sal_pricing_section .sal_pricing_list h4, .sal_primium_section .sal_pricing_title .sal_price, .sal_primium_section .sal_heading_wrapper h2 {
+    color: var(--main-bg-color);
+}
+.sal_primium_section .sal_heading_wrapper {
+    width: 100%;
+    text-align: center;
+    margin: 0 0 20px;
+}
+/********************************************************
+    10. Gallery CSS Start
+********************************************************/
+.sal_gallery_wrapper {
+    background: var(--main-bg-color);
+    padding: 0 0 50px;
+}
+.sal_porfolio_section {
+    position: relative;
+    width: 100%;
+}
+.sal_porfolio_section img {
+    width: 100%;
+}
+.sal_overlay {
+    position: absolute;
+    display: flex;
+    right: 20px;
+    left: 20px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    top: 20px;
+    bottom: 20px;
+    background: rgba(19, 19, 23, 0.9);
+    padding: 10px;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1;
+}
+.sal_overlay:before {
+    content: "";
+    top: 10px;
+    bottom: 10px;
+    border: 1px solid var(--main-brown-version2);
+    left: 10px;
+    right: 10px;
+    position: absolute;
+}
+.sal_overlay a {
+    position: relative;
+    z-index: 1;
+}
+.sal_porfolio_section:hover .sal_overlay {
+    opacity: 1;
+    visibility: visible;
+}
+.sal_porfolio_section:hover, .sal_porfolio_section, .sal_porfolio_section .sal_overlay, .sal_porfolio_section:hover .sal_overlay {
+    -webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
+.sal_gallery_slides {
+    width: 100%;
+    display: inline-block;
+}
+.saloonSlider .row {
+    margin: 0;
+}
+.sal_gallery_section {
+    display: inline-block;
+    width: 20%;
+}
+.sal_gallery_wrapper .sal_heading_wrapper {
+    margin: 0px auto 43px;
+}
+.slideBullets {
+    width: 100%;
+    text-align: center;
+    margin-top: 38px;
+}
+.slideBullets .swiper-pagination-bullet {
+    border: 1px solid var(--main-gray-version28);
+    opacity: 1;
+    width: 12px;
+    height: 12px;
+    line-height: 20px;
+    display: inline-block;
+    border-radius: 0;
+    margin: 0 6px;
+    background: transparent;
+    position: relative;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.slideBullets .swiper-pagination-bullet:before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 1px;
+    right: 0px;
+    margin: auto;
+}
+.slideBullets .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    border-color: var(--main-brown-version2);
+}
+.slideBullets .swiper-pagination-bullet.swiper-pagination-bullet-active:before {
+    background: var(--main-brown-version2);
+}
+/********************************************************
+    11. Team CSS Start
+********************************************************/
+.sal_team_wrapper {
+    padding: 12px 0 43px;
+}
+.sal_team_wrapper .sal_heading_wrapper {
+    margin-bottom: 43px;
+}
+.sal_team_section {
+    width: 100%;
+    display: inline-block;
+    position: relative;
+    margin-bottom: 30px;
+}
+.sal_team_hover {
+    position: absolute;
+    top: 30px;
+    bottom: 30px;
+    right: 30px;
+    left: 30px;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.80);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+}
+.sal_team_hover:before {
+    content: "";
+    top: 10px;
+    bottom: 10px;
+    border: 1px solid var(--main-brown-version2);
+    left: 10px;
+    right: 10px;
+    position: absolute;
+}
+.sal_team_inner {
+    position: relative;
+    z-index: 1;
+}
+.sal_team_info h4 {
+    font-size: 26px;
+}
+.sal_team_info a {
+    display: inline-block;
+    color: var(--main-bg-color);
+    font-size: 20px;
+    font-family: 'Playfair Display', serif;
+    margin: 12px 0 49px;
+}
+.sal_team_social {
+    margin: 50px 0 0;
+}
+.sal_team_social ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.sal_team_social ul li {
+    margin: 0 8px;
+}
+.sal_team_social ul li a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    line-height: 44px;
+    background: var(--main-gray-version27);
+    border: none;
+    border-radius: 50%;
+    text-align: center;
+    color: var(--main-bg-color);
+}
+.sal_team_social ul li a:hover {
+    color: var(--main-brown-version2);
+    background: var(--main-bg-color);
+}
+.sal_team_img {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+}
+.sal_team_img img {
+    width: 100%;
+}
+.sal_team_identity {
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    color: var(--main-gray-version25);
+    padding: 22px 0 0;
+}
+.sal_team_identity h4 {
+    color: var(--main-link-color);
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 38px;
+}
+.sal_team_section:hover .sal_team_hover {
+    opacity: 1;
+    visibility: visible;
+}
+.sal_team_section, .sal_team_section:hover, .sal_team_section .sal_team_hover, .sal_team_section:hover .sal_team_hover {
+    -webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
+/********************************************************
+    12. Testimonial CSS Start
+********************************************************/
+.sal_testimonial_wrapper {
+    background: url(../images/index9/testimonial_bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+    padding: 69px 0 80px;
+    color: var(--main-gray-version25);
+}
+.sal_testimonial_wrapper:before {
+    content: "";
+    position: absolute;
+    background: rgba(19, 19, 23, 0.9);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.sal_testimonial_wrapper .sal_heading_wrapper h2 {
+    color: var(--main-bg-color);
+}
+.sal_testimonials_section {
+    background: rgba(255, 255, 255, 0.08);
+    padding: 50px 80px 44px;
+    margin: 0 -15px;
+    font-family: 'Playfair Display', serif;
+}
+.sal_client_img {
+    display: flex;
+    align-items: center;
+}
+.sal_client_img img {
+    margin: 0 15px 0 0;
+    border: 1px solid var(--main-brown-version2);
+    border-radius: 50%;
+    height: 90px;
+    width: 90px;
+    object-fit: cover;
+}
+.sal_client_quote {
+    text-align: left;
+}
+.sal_testimonial_section {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.sal_client_quote h4 {
+    color: var(--main-bg-color);
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+.sal_testimonial_section > p {
+    margin-top: 26px;
+}
+.testimonialBullets {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+.testimonialBullets .swiper-pagination-bullet {
+    border: 1px solid var(--main-gray-version28);
+    opacity: 1;
+    width: 12px;
+    height: 12px;
+    line-height: 20px;
+    display: inline-block;
+    border-radius: 0;
+    margin: 0 6px;
+    background: transparent;
+    position: relative;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.testimonialBullets .swiper-pagination-bullet:before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 1px;
+    right: 0px;
+    margin: auto;
+}
+.testimonialBullets .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    border-color: var(--main-brown-version2);
+}
+.testimonialBullets .swiper-pagination-bullet.swiper-pagination-bullet-active:before {
+    background: var(--main-brown-version2);
+}
+.sal_testimonial_wrapper .sal_heading_wrapper {
+    margin-bottom: 43px;
+}
+.sal_testimonial_button {
+    width: 100%;
+    margin: auto;
+    position: absolute;
+    display: inline-block;
+    margin-top: 0;
+    top: 30px;
+    right: 0;
+    left: 0;
+    text-align: center;
+    z-index: 2;
+}
+.sal_testimonial_inner {
+    display: flex;
+    width: 42%;
+    justify-content: space-between;
+    margin: auto;
+}
+.sal_testimonial_button > div > div {
+    width: 30px;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+}
+.sal_testimonial_button > div > div svg {
+    fill: var(--main-gray-version19);
+}
+.sal_testimonial_button > div > div:hover svg {
+    fill: var(--main-brown-version2);
+}
+.sal_testimonial_button > div > div:hover {
+    width: 45px;
+}
+.testNextButton {
+    text-align: right;
+}
+.testPrevButton svg {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+.sal_testimonial_button > div > div:before {
+    content: "";
+    background: var(--main-brown-version2);
+    width: 14px;
+    position: absolute;
+    height: 2px;
+    border: none;
+    top: 14px;
+    border-radius: 6px;
+    opacity: 0;
+}
+.sal_testimonial_button > div > div.testPrevButton:hover {
+    text-align: left;
+}
+.sal_testimonial_button > div > div:hover:before {
+    opacity: .8;
+}
+.sal_testimonial_button > div > div svg {
+    width: 30px;
+    height: 20px;
+}
+.testPrevButton:before {
+    right: 2px;
+}
+.testNextButton:before {
+    left: 2px;
+}
+.sal_testimonial_button > div > div:before, .sal_testimonial_button > div > div:hover:before, .sal_testimonial_button > div > div:hover svg, .sal_testimonial_button > div > div svg, .sal_about_wrapper .sal_about_button > div > div, .sal_about_wrapper .sal_about_button > div > div:hover {
+    -webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
+/********************************************************
+    13. Blog CSS Start
+********************************************************/
+.sal_blog_wrapper {
+    width: 100%;
+    display: inline-block;
+    font-family: 'Playfair Display', serif;
+    padding: 80px 0 71px;
+}
+.sal_blog_wrapper .sal_heading_wrapper {
+    margin: 0;
+    width: 100%;
+}
+.sal_blog_wrapper .row {
+    align-items: center;
+}
+.sal_blog_info {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 24px 0 3px;
+}
+.sal_blog_img img {
+    width: 100%;
+}
+.sal_blog_info li {
+    position: relative;
+    padding-left: 8px;
+    margin-left: 8px;
+}
+.sal_blog_info li a {
+    color: var(--main-brown-version2);
+}
+.sal_blog_info li a span {
+    color: var(--main-gray-version25);
+}
+.sal_blog_info li:first-child {
+    padding-left: 0;
+    margin-left: 0;
+}
+.sal_blog_info li:first-child:before {
+    content: unset;
+}
+.sal_blog_info li:before {
+    content: "";
+    position: absolute;
+    background: var(--main-brown-version2);
+    width: 3px;
+    height: 3px;
+    border: none;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+}
+.sal_blog_button {
+    width: 100%;
+    margin: auto;
+    position: relative;
+    display: inline-block;
+    margin-top: 8px;
+    padding: 0;
+}
+.sal_blog_inner {
+    display: flex;
+    width: 80px;
+    justify-content: space-between;
+}
+.sal_blog_button > div > div {
+    width: 20px;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    height: 20px;
+}
+.sal_blog_button > div > div svg {
+    fill: var(--main-gray-version19);
+}
+.sal_blog_button > div > div:hover svg {
+    fill: var(--main-brown-version2);
+}
+.sal_blog_button > div > div:hover {
+    width: 35px;
+}
+.blogNextButton {
+    text-align: right;
+}
+.blogPrevButton svg {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+.sal_blog_button > div > div:before {
+    content: "";
+    background: var(--main-brown-version2);
+    width: 15px;
+    position: absolute;
+    height: 2px;
+    border: none;
+    top: 14px;
+    border-radius: 6px;
+    opacity: 0;
+}
+.sal_blog_button > div > div:hover:before {
+    opacity: .5;
+}
+.sal_blog_button > div > div svg {
+    width: 20px;
+    height: 20px;
+}
+.blogPrevButton:before {
+    right: 2px;
+}
+.blogNextButton:before {
+    left: 2px;
+}
+.sal_blog_button > div > div:before, .sal_blog_button > div > div:hover:before, .sal_blog_button > div > div:hover svg, .sal_about_button > div > div svg, .sal_about_button > div > div, .sal_about_button > div > div:hover, .sal_blog_title:hover, .sal_blog_title {
+    -webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
+.sal_blog_title {
+    color: var( --main-link-color);
+    font-size: 28px;
+    font-weight: 500;
+    position: relative;
+    padding: 0;
+    margin: 6px 0 0;
+    display: inline-block;
+    width: 100%;
+    line-height: 40px;
+}
+.sal_blog_title:hover {
+    color: var(--main-brown-version2);
+}
+/********************************************************
+    14. Footer CSS Start
+********************************************************/
+.sal_footer_main_wrapper {
+    background: url(../images/index9/footer_bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+    padding: 80px 0 0;
+    display: inline-block;
+    color: var(--main-gray-version25);
+    font-family: 'Playfair Display', serif;
+}
+.sal_footer_main_wrapper:before {
+    content: "";
+    position: absolute;
+    background: rgba(19, 19, 23, 0.96);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.sal_widgets h4 {
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: var(--main-bg-color);
+}
+.newsletter_wrap {
+    position: relative;
+    margin: 6px 0 12px;
+}
+.newsletter_wrap input {
+    background: rgba(255, 255, 255, 0.1);
+    width: 100%;
+    position: relative;
+    height: 50px;
+    padding: 0 70px 0 20px;
+    border: none;
+    color: var(--main-bg-color);
+    line-height: 50px;
+}
+.newsletter_wrap input::-webkit-input-placeholder {
+    color: var(--main-txt-color);
+}
+.newsletter_wrap input::-moz-placeholder {
+    color: var(--main-txt-color);
+}
+.newsletter_wrap input:-ms-input-placeholder {
+    color: var(--main-txt-color);
+}
+.newsletter_wrap input:-moz-placeholder {
+    color: var(--main-txt-color);
+}
+.newsletter_wrap button {
+    background: var(--main-brown-version2);
+    border: none;
+    color: var(--main-bg-color);
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 50px;
+}
+.sal_widgets h6 {
+    font-size: 18px;
+    color: var(--main-bg-color);
+}
+.sal_widgets h5 {
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 40px;
+    color: var(--main-bg-color);
+}
+.sal_widgets ul li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 5px;
+}
+.sal_widgets ul li:before {
+    position: absolute;
+    left: 0;
+    content: "";
+    width: 5px;
+    height: 5px;
+    border: none;
+    border-radius: 50%;
+    top: 50%;
+    background: var(--main-paint-footer);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.sal_widgets ul li:hover:before {
+    background: var(--main-brown-version2);
+}
+.sal_widgets ul li a {
+    color: var(--main-gray-version25);
+    position: relative;
+}
+.sal_widgets ul li a:hover {
+    color: var(--main-brown-version2);
+}
+.sal_widgets ul li a:hover:after {
+    background: var(--main-brown-version2);
+}
+.sal_widgets ul li a:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background: var(--main-gray-version25);
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+}
+.sal_widgets ul li a:hover:after {
+    opacity: 0.6;
+}
+.sal_widgets ul li a:hover:after, .sal_widgets ul li a:after, .sal_widgets ul li:before, .sal_widgets ul li:hover:before, .sal_widgets_contact span:hover, .sal_widgets_contact span, .sal_widgets_contact span:hover svg, .sal_widgets_contact span svg {
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.sal_widgets_contact span:hover {
+    background: var(--main-brown-version2);
+}
+.sal_widgets_contact span:hover svg {
+    fill: var(--main-bg-color);
+}
+.sal_widgets_contact h4 {
+    font-weight: 700;
+    font-size: 28px;
+    margin-bottom: 8px;
+    color: var(--main-bg-color);
+}
+.footer_information {
+    border-bottom: 4px double var(--main-bg-color);
+    padding: 0 0 13px;
+    margin: 0 0 44px;
+}
+.sal_widgets_contact span {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    background: rgba(255, 255, 255, 0.10);
+    border: none;
+    border-radius: 50%;
+    margin-bottom: 22px;
+}
+.sal_widgets_contact span svg {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    fill: var(--main-brown-version2);
+}
+.sal_widgets_contact a {
+    color: var(--main-gray-version25);
+    display: inline-block;
+    width: 100%;
+}
+.sal_copyright_wrapper {
+    padding: 14px 0 13px;
+    color: var(--main-paint-footer);
+    position: relative;
+    margin-top: 43px;
+    background: var(--main-black8);
+}
+.sal_copyright_wrapper a {
+    color: var(--main-brown-version2);
+}
+/********************************************************
+	15. Responsive CSS Start
+********************************************************/
+@media (min-width: 992px) {
+    .sal_about_wrapper .col-lg-5 {
+        -ms-flex: 0 0 44.444%;
+        flex: 0 0 44.444%;
+        max-width: 44.444%;
+    }
+    .sal_about_wrapper .col-lg-7 {
+        -ms-flex: 0 0 55.444%;
+        flex: 0 0 55.444%;
+        max-width: 55.444%;
+    }
+}
+@media (min-width: 991.98px) {
+    .sal_header_wrapper {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        right: 0;
+        border-bottom: 4px double var(--main-gray-version26);
+    }
+    .main_menu_wrapper ul > li > a {
+        padding: 7px 0 27px;
+        color: var(--main-bg-color);
+        position: relative;
+    }
+    a.searchBtn {
+        margin: 0 0 15px;
+    }
+    .main_menu_wrapper ul > li {
+        padding: 0 20px 0;
+    }
+    .main_menu_wrapper > ul > li > a:hover:before, .main_menu_wrapper > ul > li.active > a:before {
+        left: 0;
+        right: 0;
+    }
+    .main_menu_wrapper > ul > li > a:hover:after, .main_menu_wrapper > ul > li > a:hover:before, .main_menu_wrapper > ul > li.active > a:after, .main_menu_wrapper > ul > li.active > a:before {
+        opacity: 1;
+        visibility: visible;
+    }
+    .main_menu_wrapper > ul > li > a:before {
+        position: absolute;
+        content: "";
+        height: 4px;
+        background: var(--main-brown-version2);
+        margin: auto;
+        left: 20px;
+        right: 20px;
+        bottom: -3px;
+        opacity: 0;
+        visibility: hidden;
+    }
+    .main_menu_wrapper > ul > li > a:after {
+        position: absolute;
+        content: "";
+        border-top: solid 5px transparent;
+        border-left: solid 5px transparent;
+        border-right: solid 5px transparent;
+        border-bottom: solid 5px var(--main-brown-version2);
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: 0 auto;
+        width: 10px;
+        opacity: 0;
+        visibility: hidden;
+    }
+    .main_menu_wrapper > ul > li > a, .main_menu_wrapper > ul > li > a:after, .main_menu_wrapper > ul > li > a:before, .main_menu_wrapper > ul > li > a:hover:after, .main_menu_wrapper > ul > li > a:hover:before {
+        -webkit-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        -ms-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        transition: all 0.5s;
+    }
+    .main_menu_wrapper ul.sub_menu {
+        background: var(--main-link-color);
+        top: 65px;
+    }
+    .main_menu_wrapper ul > li ul.sub_menu li a {
+        padding: 15px 20px 0;
+    }
+}
+
+@media (min-width: 1799.98px) {
+    .sal_header_wrapper .container-fluid, .sal_footer_main_wrapper .container-fluid, .sal_banner_wrapper .container-fluid {
+        max-width: 1756px;
+    }
+}
+
+@media (min-width: 1700px) {
+    .sal_price_wrapper .container-fluid, .sal_team_wrapper .container-fluid {
+        max-width: 1680px;
+    }
+    .sal_blog_head {
+        padding-left: 25%;
+    }
+}
+
+@media (max-width: 1799.98px) {
+    .sal_contant_info {
+        width: 85%;
+    }
+    .sal_widgets h5, .sal_team_info h4, .sal_service_text > a {
+        font-size: 24px;
+    }
+    .sal_about_detail {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1699.98px) {
+    .sal_widgets h5, .sal_team_info h4, .sal_service_text > a {
+        font-size: 20px;
+    }
+    .sal_service_text {
+        min-height: 72px;
+        padding: 0 70px 0 0;
+    }
+    .sal_service_icon {
+        width: 70px;
+        height: 70px;
+        line-height: 70px;
+    }
+    .sal_service_text:before {
+        border-bottom: 36px solid transparent;
+        border-top: 36px solid transparent;
+    }
+    .sal_service_holder {
+        padding: 0 0 0 80px;
+    }
+    .sal_service_vertical_area {
+        font-size: 32px;
+        left: 16px;
+    }
+    .sal_service_holder.sal_service_right .sal_service_vertical_area {
+        right: 16px;
+    }
+    .sal_service_holder.sal_service_right .sal_service_text {
+        padding: 0 0 0 70px;
+    }
+    .sal_service_holder.sal_service_right {
+        padding: 0 80px 0 0;
+    }
+    .sal_service_icon svg {
+        height: 40px;
+        width: 40px;
+    }
+    .sal_contant_info {
+        width: 90%;
+    }
+    .sal_widgets_contact h4, .sal_blog_title, .sal_team_identity h4 {
+        font-size: 24px;
+    }
+    .sal_blog_info {
+        font-size: 14px;
+    }
+    .sal_blog_info li {
+        padding-left: 6px;
+        margin-left: 6px;
+    }
+}
+
+@media (max-width: 1440px) {
+    .sal_heading_wrapper h2, .sal_contant_info_hover h4, .sal_contant_info_title h4 {
+        font-size: 32px;
+    }
+    .sal_subHeading {
+        font-size: 28px;
+    }
+    .sal_contant_info_section.sal_info_center {
+        padding: 43px 15px 52px;
+    }
+    .sal_btn, .sal_btn:hover {
+        min-width: 150px;
+        font-size: 14px;
+    }
+    
+    .sal_team_hover, .sal_overlay, .sal_contant_info_hover {
+        top: 15px;
+        bottom: 15px;
+        right: 15px;
+        left: 15px;
+    }
+    .sal_testimonials_section {
+        margin: 0;
+    }
+}
+
+@media (max-width: 1440px) and (min-width: 1200px){
+    .sal_contant_info_hover .sal_btn.left_skew {
+        padding: 0px 15px 0px 0px;
+        text-align: right;
+    }
+    .sal_contant_info_hover .sal_btn {
+        padding: 0 0 0 15px;
+        text-align: left;
+    }
+}
+
+@media (max-width: 1199.98px) {
+    .sal_blog_head {
+        padding: 0 0 30px;
+    }
+    .sal_primium_section .sal_pricing_section {
+        margin-right: 0;
+        margin-left: 0;
+    }
+    .sal_service_vertical_area {
+        position: unset;
+        writing-mode: unset;
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+        margin-bottom: 30px;
+        font-size: 20px;
+    }
+    .sal_service_holder, .sal_service_holder.sal_service_right {
+        padding: 0;
+    }
+    .sal_service_icon {
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+    }
+    .sal_service_text {
+        padding: 0 50px 0 0;
+    }
+    .sal_service_holder.sal_service_right .sal_service_text {
+        padding: 0 0 0 50px;
+    }
+    .sal_service_section {
+        margin-bottom: 50px;
+    }
+    .sal_banner_section {
+        padding: 267px 0 200px;
+    }
+    .sal_banner_text h1 {
+        font-size: 52px;
+        line-height: 55px;
+    }
+    .sal_openTime_wrapper .container-fluid {
+        max-width: 650px;
+    }
+    .sal_openTime_wrapper .col-xl-4:last-child .sal_contant_info_section {
+        margin: 0;
+    }
+    .sal_contant_info_section {
+        margin-bottom: 30px;
+    }
+    .sal_openTime_wrapper {
+        padding-top: 80px;
+    }
+    .sal_about_vertical_area {
+        font-size: 40px;
+        left: 0;
+    }
+    .sal_about_detail h1 {
+        font-size: 32px;
+        line-height: 34px;
+    }
+    .sal_about_detail {
+        padding: 0 20px 0 50px;
+    }
+    .sal_title {
+        font-size: 18px;
+        letter-spacing: 3px;
+    }
+    .sal_about_detail h5, .sal_widgets h4, .sal_pricing_title .sal_price {
+        font-size: 18px;
+    }
+    .sal_about_num {
+        font-size: 28px;
+        line-height: 40px;
+    }
+    .sal_about_detail .sal_btn {
+        margin: 13px 0 24px;
+    }
+    .sal_heading_wrapper {
+        width: 85%;
+    }
+    .sal_testimonial_inner {
+        width: 100%;
+    }
+    .sal_testimonial_button > div > div:before {
+        top: 14px;
+    }
+    .sal_widgets_contact h4, .sal_blog_title, .sal_team_identity h4 {
+        font-size: 18px;
+        line-height: 30px;
+    }
+    .sal_blog_button > div > div:before, .sal_testimonial_button > div > div:before, .sal_about_wrapper .sal_about_button > div > div:before {
+        content: unset;
+    }
+}
+
+@media (max-width: 1199.98px) and (min-width: 992px){
+    .main_menu_wrapper ul > li > a {
+        padding: 8px 0 18px;
+    }
+    .sal_header_wrapper {
+        padding: 15px 0 0;
+    }
+    .searchBtn, .searchBtn:focus, .searchBtn:hover {
+        margin-top: -6px;
+    }
+    .sal_about_detail {
+        margin: 0;
+    }
+    .sal_about_wrapper .row {
+        align-items: center;
+    }
+    .sal_about_wrapper {
+        padding: 76px 0 74px;
+    }
+    .sal_service_wrapper {
+        padding: 71px 0 0;
+    }
+    .sal_service_holder {
+        margin-bottom: 80px;
+    }
+    .sal_price_wrapper {
+        padding: 71px 0 41px;
+    }
+    .sal_gallery_wrapper {
+        padding: 0 0 53px;
+    }
+    .sal_testimonial_wrapper {
+        padding: 71px 0 80px;
+    }
+    .sal_copyright_wrapper {
+        margin-top: 43px;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .main_menu_wrapper li.has_submenu:before, .main_menu_wrapper li.has_submenu:after {
+        background: var(--main-brown-version2);
+    }
+    .sal_widgets_contact span {
+        width: 80px;
+        height: 80px;
+        line-height: 80px;
+    }
+    .sal_widgets_contact span svg {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+    }
+    .sal_about_wrapper .col-lg-7 {
+        flex-direction: column-reverse;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .sal_about_wrapper .sal_about_button > div > div:before {
+        top: 10px;
+    }
+    .sal_about_wrapper .sal_about_button {
+        margin: 0 0 5px;
+    }
+    .sal_pricing_section {
+        width: 85%;
+        margin: 2px auto 30px;
+    }
+    .sal_primium_section .sal_pricing_section {
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .sal_testimonials_section {
+        padding: 50px 40px 44px;
+    }
+    .sal_testimonial_button > div > div:before {
+        top: 10px;
+    }
+    .sal_blog_wrapper .col-12.padder_right {
+        padding-right: 15px;
+    }
+    .sal_header_wrapper {
+        background: var(--main-link-color);
+        padding: 20px 0 18px;
+    }
+    .menu_btn {
+        height: auto;
+        margin-top: 12px;
+        padding: 0;
+    }
+    .menu_btn span {
+        background: var(--main-bg-color);
+    }
+    .searchBtn, .searchBtn:focus, .searchBtn:hover {
+        padding: 12px 0 0;
+    }
+    .sal_banner_section {
+        padding: 196px 0 200px;
+    }
+    .sal_about_detail {
+        margin: 28px 0 0;
+    }
+    .sal_about_wrapper {
+        padding: 80px 0 75px;
+    }
+    .sal_service_wrapper {
+        padding: 71px 0 0;
+    }
+    .sal_service_holder {
+        margin-bottom: 87px;
+    }
+    .sal_service_holder.sal_service_left {
+        margin-bottom: 57px;
+    }
+    .sal_service_img {
+        margin-bottom: 17px;
+    }
+    .sal_service_wrapper .sal_heading_wrapper {
+        margin-bottom: 10px;
+    }
+    .sal_price_wrapper {
+        padding: 71px 0 41px;
+    }
+    .slideBullets {
+        margin-top: 40px;
+    }
+    .sal_team_wrapper {
+        padding: 18px 0 50px;
+    }
+    .sal_testimonial_wrapper {
+        padding: 71px 0 80px;
+    }
+    .sal_blog_wrapper {
+        padding: 71px 0 72px;
+    }
+    .sal_copyright_wrapper {
+        margin-top: 42px;
+    }
+    .sal_team_section {
+        margin-bottom: 26px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .sal_gallery_section {
+        width: 50%;
+    }
+    .sal_gallery_slides .sal_gallery_section:last-child {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .sal_gallery_slides .sal_gallery_section:last-child .sal_porfolio_section {
+        width: 50%;
+    }
+    .sal_info_num {
+        font-size: 28px;
+        line-height: 36px;
+    }
+    .sal_banner_button {
+        bottom: 140px;
+    }
+    .sal_about_wrapper .sal_about_button > div > div:before {
+        top: 9px;
+    }
+    .sal_about_wrapper {
+        padding: 80px 0 76px;
+    }
+    .sal_contant_info_section.sal_info_center {
+        padding: 43px 0 52px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .sal_testimonials_section {
+        padding: 50px 20px 44px;
+    }
+    .sal_client_img img {
+        margin: 0 0 15px 0;
+    }
+    .sal_client_quote {
+        width: 100%;
+        text-align: center;
+    }
+    .sal_client_img {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .sal_pricing_title h4 {
+        font-size: 18px;
+        width: 100%;
+        padding-right: 0;
+    }
+    .sal_pricing_title .sal_price {
+        position: relative;
+        font-size: 18px;
+        margin: 6px 0;
+    }
+    .sal_pricing_section {
+        width: 95%;
+        padding: 40px 20px 33px;
+    }
+    .sal_gallery_slides .sal_gallery_section:last-child .sal_porfolio_section, .sal_gallery_section {
+        width: 100%;
+    }
+    .sal_banner_wrapper .pagination {
+        bottom: 52px;
+    }
+    .sal_banner_button {
+        display: none;
+    }
+    .sal_banner_text {
+        text-align: center;
+    }
+    .sal_about_detail {
+        padding: 0 0px 0 50px;
+    }
+    .sal_service_text a {
+        font-size: 18px;
+        line-height: 26px;
+    }
+}

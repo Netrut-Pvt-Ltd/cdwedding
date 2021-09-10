@@ -1,0 +1,1581 @@
+/*--------------------- Copyright (c) 2020 ----------------------- 
+[Master Stylesheet] 
+Project: Multifarious GYM
+Version: 1.0.0 
+Author: Kamleshyadav
+ ------------------------------------------------------------------- 
+[Table of contents] 
+	1. Global CSS Start
+	2. Comman CSS Start
+    3. Preloader CSS Start
+    4. Header CSS Start
+    5. Banner CSS Start
+    6. Partner CSS Start
+    7. About CSS Start
+    8. Counter CSS Start
+    9. Service CSS Start
+    10. Why Us CSS Start
+    11. Team CSS Start
+    12. Testimonial CSS Start
+    13. Blog CSS Start
+    14. Contact CSS Start
+    15. Footer CSS Start
+    16. Responsive CSS Start
+-------------------------------------------------------------------*/
+/********************************************************
+    1. Global CSS Start
+********************************************************/
+body {
+    color: var(--main-gol-txt-color);
+    background: var(--main-bg-color);
+}
+a, a:hover, a:focus {
+	color: var(--main-link-color);
+}
+h1, h2, h3, h4, h5, h6 {
+    color: var(--main-gol-title-color);
+}
+
+/********************************************************
+    2. Comman CSS Start
+********************************************************/
+.gol_btn {
+    background: var(--main-green-color);
+    color: var(--main-bg-color);
+    display: inline-block;
+    border: 2px solid transparent;
+    border-radius: 30px;
+    height: 50px;
+    line-height: 46px;
+    text-align: center;
+    padding: 0 15px;
+    width: 170px;
+    margin-top: 10px;
+    z-index: 0;
+    font-weight: 700;
+    overflow: hidden;
+    position: relative;
+    display: inline-table;
+}
+.gol_btn:hover {
+    color: var(--main-green-color);
+}
+.gol_btn.gol_white {
+    background: transparent;
+    border: 2px solid var(--main-bg-color);
+}
+.gol_btn:hover {
+    color: var(--main-green-color);
+}
+.gol_btn span {
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    background-color: var(--main-bg-color);
+    -webkit-transform: translateY(150%);
+	-moz-transform: translateY(150%);
+	-ms-transform: translateY(150%);
+	-o-transform: translateY(150%);
+    transform: translateY(150%);
+    border-radius: 50%;
+    left: calc((var(--n) - 1) * 25%);
+    transition: 0.5s;
+    transition-delay: calc((var(--n) - 1) * 0.1s);
+    z-index: -1;
+}
+.gol_btn:hover span {
+    -webkit-transform: translateY(0) scale(2);
+	-moz-transform: translateY(0) scale(2);
+	-ms-transform: translateY(0) scale(2);
+	-o-transform: translateY(0) scale(2);
+    transform: translateY(0) scale(2);
+}
+.gol_btn span:nth-child(1) {
+    --n: 1;
+}
+.gol_btn span:nth-child(2) {
+    --n: 2;
+}
+.gol_btn span:nth-child(3) {
+    --n: 3;
+}
+.gol_btn span:nth-child(4) {
+    --n: 4;
+}
+.gol_bg_title {
+    font-size: 16px;
+    color: var(--main-bg-color);
+    line-height: 38px;
+    display: inline-block;
+    background: var(--main-green-color);
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    padding: 3px 12px 0;
+    position: relative;
+    margin: 0 15px;
+}
+.gol_bg_title:before {
+    content: "";
+    position: absolute;
+    left: -11px;
+    background: var(--main-green-color);
+    width: 20px;
+    bottom: 0;
+    top: 0;
+    -webkit-transform: skewX(-15deg);
+    -moz-transform: skewX(-15deg);
+    -ms-transform: skewX(-15deg);
+    -o-transform: skewX(-15deg);
+    transform: skewX(-15deg);
+}
+.gol_bg_title:after {
+    content: "";
+    position: absolute;
+    right: -11px;
+    background: var(--main-green-color);
+    width: 20px;
+    bottom: 0;
+    top: 0;
+    -webkit-transform: skewX(-15deg);
+    -moz-transform: skewX(-15deg);
+    -ms-transform: skewX(-15deg);
+    -o-transform: skewX(-15deg);
+    transform: skewX(-15deg);
+}
+.gol_heading h4 {
+    font-size: 38px;
+    font-weight: 700;
+    position: relative;
+    margin: 0 0 22px;
+    padding: 0 0 6px;
+}
+.gol_heading h4:before {
+    position: absolute;
+    left: 0;
+    height: 2px;
+    background: var(--main-gray-color);
+    bottom: 0;
+    content: "";
+    width: 155px;
+}
+.gol_heading h4:after {
+    position: absolute;
+    left: 0;
+    height: 4px;
+    background: var(--main-green-color);
+    bottom: -1px;
+    content: "";
+    width: 65px;
+    border: none;
+    border-radius: 6px;
+}
+.gol_heading.center {
+    margin-bottom: 41px;
+}
+.gol_heading.center h4 {
+    margin: 0 0 10px;
+}
+.gol_heading.center h4:before, .gol_heading.center h4:after {
+    right: 0;
+    margin: auto;
+}
+.gol_heading .white:before {
+    background: var(--main-gray-border);
+}
+.gol_readMoreBtn {
+    color: var(--main-green-color);
+    position: relative;
+    font-weight: 500;
+    display: inline-block;
+    margin-top: 10px;
+}
+.gol_readMoreBtn:hover {
+    color: var(--main-green-color);
+    letter-spacing: 1px;
+}
+.gol_readMoreBtn:before {
+    content: "";
+    position: absolute;
+    bottom: 5px;
+    background: var(--main-green-color);
+    width: 100%;
+    height: 1px;
+    opacity: .6;
+}
+.gol_subHeading {
+    font-size: 22px;
+}
+#scroll {
+    background: var(--main-green-color);
+    color: var(--main-bg-color);
+}
+/********************************************************
+    3. Preloader CSS Start
+********************************************************/
+.preloader_active .preloader_holder {
+    background-color: var(--main-bg-color);
+}
+.preloader_active .preloader_holder .preloader span {
+    box-shadow: 0px 0px 0px 0px var(--main-green-color);
+}
+@-webkit-keyframes loadingCircles{
+    0%{-webkit-transform: scale(0); opacity: 1; box-shadow: 0px 0px 0px 10px var(--main-green-color);}
+    100%{-webkit-transform: scale(1); opacity: 0; box-shadow: 0px 0px 0px 2px var(--main-green-color);}
+}
+@-moz-keyframes loadingCircles{
+    0%{-moz-transform: scale(0); opacity: 1; box-shadow: 0px 0px 0px 10px var(--main-green-color);}
+    100%{-moz-transform: scale(1); opacity: 0; box-shadow: 0px 0px 0px 2px var(--main-green-color);}
+}
+@keyframes loadingCircles{
+    0%{transform: scale(0); opacity: 1; box-shadow: 0px 0px 0px 10px var(--main-green-color);}
+    100%{transform: scale(1); opacity: 0; box-shadow: 0px 0px 0px 2px var(--main-green-color);}
+}
+.preloader_open:before, .preloader_open:after {
+    background-color: var(--main-bg-color);
+}
+/********************************************************
+    4. Header CSS Start
+********************************************************/
+header {
+    position: absolute;
+    z-index: 9;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+.gol_header_wrapper {
+    background: var(--main-bg-color);
+    padding: 16px 200px 16px 0;
+    position: relative;
+}
+.gol_header_info {
+    position: absolute;
+    right: 0;
+    background: var(--main-green-color);
+    color: var(--main-bg-color);
+    width: 200px;
+    top: 0;
+    bottom: -20px;
+    text-align: center;
+    padding: 15px 0;
+}
+.gol_header_info:before {
+    content: "";
+    border-bottom: 20px solid transparent;
+    border-right: 12px solid var(--main-green-color);
+    bottom: 0px;
+    position: absolute;
+    left: -12px;
+}
+.gol_header_info svg {
+    height: 20px;
+    fill: var(--main-bg-color);
+}
+.gol_header_info p {
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.gol_header_info a {
+    color: var(--man-bg-color);
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 22px;
+}
+.searchBtn {
+    margin-right: 12px;
+    padding: 0 10px;
+}
+.gol_logo {
+    padding-left: 15px;
+}
+/********************************************************
+    5. Banner CSS Start
+********************************************************/
+.gol_banner_section {
+    background-color: var(--main-border-color);
+    padding: 362px 0 260px;
+    position: relative;
+    text-align: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.gol_banner_section:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.60);
+}
+.gol_banner_section.slide1 {
+    background-image: url(../images/index3/slide1.jpg);
+}
+.gol_banner_section.slide2 {
+    background-image: url(../images/index3/slide2.jpg);
+}
+.gol_banner_section.slide3 {
+    background-image: url(../images/index3/slide3.jpg);
+}
+.gol_banner_text {
+    padding: 0 50px;
+}
+.gol_banner_text .gol_bg_title {
+    font-size: 28px;
+    line-height: 68px;
+    letter-spacing: 10px;
+    padding: 3px 30px 0;
+}
+.gol_banner_text h2 {
+    font-size: 92px;
+    color: var(--main-bg-color);
+    font-weight: 700;
+}
+.gol_banner_text .gol_btn {
+    margin: 4px 15px 0;
+}
+.gol_banner_button {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+}
+.gol_banner_button > div {
+    background: rgba(0, 0, 0, 0.60);
+    color: var(--main-bg-color);
+    width: 41px;
+    height: 120px;
+    position: absolute;
+    z-index: 1;
+    writing-mode: vertical-rl;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-size: 19px;
+    cursor: pointer;
+}
+.gol_banner_button > div:hover {
+    background: var(--main-green-color);
+}
+.ButtonPrev {
+    left: 0;
+    padding: 0 3px 0 0;
+}
+.ButtonNext {
+    right: 0;
+    padding: 0 2px 0 0;
+}
+.gol_banner_button > div, .gol_banner_button > div:hover {
+    -webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
+/********************************************************
+    6. Partner CSS Start
+********************************************************/
+.gol_partner_wrapper {
+    padding: 80px 0;
+}
+/********************************************************
+    7. About CSS Start
+********************************************************/
+.gol_about_section {
+    background: var(--main-bg-color);
+    padding: 0 0 15px;
+}
+.gol_about_section .row {
+    align-items: center;
+}
+.video_popup {
+    position: relative;
+    display: flex;
+}
+.video_popup:before {
+    position: absolute;
+    content: "";
+    background: rgba(0, 0, 0, 0.40);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.video_icon svg {
+    width: 18px;
+    fill: var(--main-bg-color);
+}
+.video_icon {
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    display: inline-block;
+    background: var(--main-green-color);
+    border-radius: 100%;
+    text-align: center;
+    margin-left: 30px;
+    animation: shadow-pulse 2s infinite;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.video_icon svg {
+    width: 18px;
+    fill: var(--main-bg-color);
+}
+@keyframes shadow-pulse {
+    0% {
+        box-shadow: 0 0 0 0  rgba(255, 255, 255, 0.1);
+    }
+    100% {
+        box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.1);
+    }
+}
+@keyframes shadow-pulse-big {
+    0% {
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.3);
+    }
+    100% {
+        box-shadow: 0 0 0 30px rgba(255, 255, 255, 0);
+    }
+}
+.gol_contact_info {
+    display: flex;
+    background: var(--main-green-color);
+    width: 270px;
+    height: 70px;
+    line-height: 70px;
+    border: none;
+    border-radius: 40px;
+    margin: auto;
+    padding: 0 0 0 70px;
+    position: relative;
+    color: var(--main-bg-color);
+    font-weight: 700;
+    font-size: 23px;
+    top: -35px;
+}
+.gol_contact_info:hover {
+    color: var(--main-bg-color);
+}
+.gol_contact_info svg {
+    width: 30px;
+    fill: var(--main-bg-color);
+}
+.gol_contact_info span {
+    width: 55px;
+    height: 55px;
+    background: var(--main-green-bg);
+    line-height: 55px;
+    text-align: center;
+    border: none;
+    border-radius: 50%;
+    position: absolute;
+    left: 6px;
+    top: 7px;
+}
+.gol_about_detail h2 {
+    font-size: 38px;
+    font-weight: 700;
+    margin: 12px 0 3px 0;
+}
+.gol_about_detail h6 {
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: var(--main-gol-title-color);
+    line-height: 26px;
+}
+.gol_about_detail .gol_btn {
+    margin-top: 25px;
+    margin-bottom: 36px;
+}
+/********************************************************
+    8. Counter CSS Start
+********************************************************/
+.gol_counter_wrapper {
+    background: url(../images/index3/counter_bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+    padding: 80px 0 33px;
+}
+.gol_counter_wrapper:before {
+    content: "";
+    position: absolute;
+    background: rgba(0, 0, 0, 0.80);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.gol_counter_icon {
+    margin-bottom: 24px;
+    padding-bottom: 36px;
+    position: relative;
+}
+.gol_counter_icon:before {
+    position: absolute;
+    left: -15px;
+    right: -15px;
+    height: 1px;
+    background: var(--main-black2);
+    bottom: 0;
+    content: "";
+}
+.gol_counter_icon:after {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 15px;
+    width: 15px;
+    background: var(--main-green-color);
+    bottom: -6px;
+    content: "";
+    margin: auto;
+    border: none;
+    border-radius: 50%;
+}
+.counter_item {
+    margin-bottom: 40px;
+}
+.counter_item h2 {
+    font-size: 56px;
+    color: var(--main-bg-color);
+    font-weight: 700;
+}
+.counter_item p {
+    font-size: 22px;
+    color: var(--main-bg-color);
+    margin-top: 10px;
+}
+.gol_counter_icon img {
+    height: 60px;
+}
+.gol_counter_wrapper .counter_holder {
+    position: relative;
+}
+.gol_counter_wrapper .counter_holder:before {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: url(../images/index3/counter_line.png);
+    top: 93px;
+    content: "";
+    background-position: center;
+    background-size: cover;
+}
+/********************************************************
+    9. Service CSS Start
+********************************************************/
+.gol_services_section {
+    padding: 30px 0;
+}
+.gol_services_section .row {
+    align-items: center;
+}
+.gol_icon_bg {
+    width: 100%;
+    background-image: url(../images/index3/service_bg.png);
+    height: 185px;
+    display: flex;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+    padding-top: 30px;
+}
+.gol_icon_bg svg {
+    height: 70px;
+    fill: var(--main-green-color);
+}
+.gol_service_container {
+    background: var(--main-bg-color);
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.06);
+}
+.service_slider.swiper-container {
+    padding: 50px 0;
+    cursor: all-scroll;
+}
+.gol_service_text {
+    padding: 22px 12px 26px;
+}
+.gol_service_container:hover .gol_icon_bg {
+    background-color: var(--main-green-color);
+    background-image: url(../images/index3/service_bg_hover.png);
+}
+.gol_service_container:hover .gol_icon_bg svg {
+    fill: var(--main-bg-color);
+}
+.gol_service_container:hover .gol_service_text {
+    background-color: var(--main-green-color);
+    color: var(--main-bg-color);
+}
+.gol_service_container:hover .gol_subHeading, .gol_service_container:hover .gol_readMoreBtn {
+    color: var(--main-bg-color);
+}
+.gol_service_container:hover .gol_readMoreBtn:before {
+    background: var(--main-bg-color);
+}
+.gol_service_container:hover .gol_icon_bg, .gol_service_container .gol_icon_bg, .gol_service_container:hover .gol_readMoreBtn:before, .gol_service_container .gol_readMoreBtn:before, .gol_service_container:hover .gol_service_text, .gol_service_container .gol_service_text, .gol_service_container, .gol_service_container:hover, .gol_service_container .gol_icon_bg, .gol_service_container:hover .gol_icon_bg, .gol_service_container:hover .gol_icon_bg svg, .gol_icon_bg svg, .gol_subHeading, .gol_service_container:hover .gol_subHeading, .gol_readMoreBtn, .gol_service_container:hover .gol_readMoreBtn  {
+    -webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
+/********************************************************
+    10. Why Us CSS Start
+********************************************************/
+.gol_whyUs_wrapper, .gol_green_bg {
+    background: var(--main-green-color);
+    color: var(--main-bg-color);
+}
+.gol_whyUs_wrapper .row {
+    align-items: center;
+}
+.gol_whyUs_container .gol_heading {
+    margin-bottom: 41px;
+}
+.gol_whyUs_container .gol_heading h4 {
+    color: var(--main-bg-color);
+    margin: 0 0 7px;
+}
+.gol_whyUs_container .gol_heading h4:before {
+    background: var(--main-green-light);
+}
+.gol_whyUs_container .gol_heading h4:after {
+    background: var(--main-bg-color);
+}
+.gol_whyUs_container .tabs_nav li {
+    border: 1px solid var(--main-green-light);
+    padding: 23px 20px 20px;
+    margin-top: 20px;
+    position: relative;
+    background: var(--main-green-color);
+}
+.gol_whyUs_container .tabs_nav li.active {
+    border-color: var(--main-bg-color);
+    background: var(--main-bg-color);
+}
+.gol_whyUs_container .tabs_nav li.active a {
+    color: var(--main-gol-txt-color);
+}
+.gol_whyUs_container .tabs_nav li.active h4 {
+    color: var(--main-gol-title-color);
+}
+.gol_whyUs_container .tabs_nav li.active:before {
+    content: "";
+    position: absolute;
+    left: -15px;
+    z-index: 1;
+    border-right: 18px solid var(--main-bg-color);
+    border-bottom: 18px solid transparent;
+    border-top: 18px solid transparent;
+    top: 18px;
+    background: transparent;
+}
+.gol_whyUs_container .tabs_nav li a {
+    color: var(--main-bg-color);
+}
+.gol_whyUs_container .tabs_nav li h4 {
+    color: var(--main-bg-color);
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+.single_tab img {
+    height: 100%;
+    object-fit: cover;
+}
+.gol_whyUs_container {
+    padding: 72px 65px 80px;
+}
+/********************************************************
+    11. Team CSS Start
+********************************************************/
+.gol_team_wrapper {
+    padding: 72px 0 71px;
+}
+.gol_team_section {
+    position: relative;
+    background: var(--main-bg-color);
+}
+.gol_team_img_wrapper {
+    display: flex;
+}
+.gol_team_rtl {
+    width: 30px;
+}
+.gol_team_img {
+    width: calc(100% - 30px);
+    position: relative;
+}
+.gol_team_img img {
+    width: 100%;
+}
+.gol_member_designation {
+    writing-mode: tb-rl;
+    position: relative;
+    width: 100%;
+    padding-top: 65px;
+    line-height: 34px;
+}
+.gol_member_designation:before {
+    content: "";
+    width: 1px;
+    height: 50px;
+    background: var(--main-green-color);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.gol_team_social {
+    text-align: center;
+    margin-top: 27px;
+}
+.gol_team_social li a {
+    color: var(--main-gol-txt-color);
+}
+.gol_team_social li a:hover {
+    color: var(--main-green-color);
+}
+.gol_team_hover {
+    background: rgba(0, 0, 0, 0.80);
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border: none;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    border-radius: 0;
+    -webkit-transform: translateY(-500px);
+    -moz-transform: translateY(-500px);
+    -ms-transform: translateY(-500px);
+    -o-transform: translateY(-500px);
+    transform: translateY(-500px);
+}
+.gol_team_section:hover .gol_team_hover {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    -o-transform: translateY(0px);
+    transform: translateY(0px);
+}
+.gol_team_inner {
+    margin: auto;
+    text-align: center;
+    color: var(--main-bg-color);
+}
+.gol_team_info:first-child {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    position: relative;
+}
+.gol_team_info:first-child:before {
+    background: var(--main-black3);
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 60%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: 0;
+}
+.gol_team_info {
+    width: 100%;
+    display: inline-block;
+}
+.gol_team_info h6 {
+    font-size: 20px;
+    color: var(--main-green-color);
+}
+.gol_team_info a {
+    color: var(--main-bg-color);
+    display: inline-block;
+    width: 100%;
+}
+.gol_team_img_wrapper, .gol_team_img_wrapper:hover, .gol_team_img_wrapper .gol_team_hover, .gol_team_img_wrapper:hover .gol_team_hover, .gol_team_button > div, .gol_team_button > div:hover, .gol_team_button > div svg, .gol_team_button > div:hover svg  {
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.gol_team_identity a {
+    color: var(--main-gol-title-color);
+    font-weight: 700;
+    font-size: 26px;
+    margin-top: 17px;
+    display: inline-block;
+}
+.gol_team_button > div svg {
+    width: 20px;
+    fill: var(--main-gol-txt-color);
+}
+.swiperPagination {
+    width: 100%;
+    text-align: center;
+    margin: 26px 0 0;
+}
+.swiperPagination span.swiper-pagination-bullet {
+    width: 30px;
+    height: 6px;
+    border-radius: 0;
+    margin: 0 8px;
+    background: var(--main-gray-light);
+}
+.swiperPagination span.swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background: var(--main-green-light);
+}
+.gol_team_button {
+    position: absolute;
+    top: 35%;
+    width: 100%;
+    left: 0;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.gol_team_button > div {
+    position: absolute;
+    cursor: pointer;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+}
+.gol_team_button .swiper-button-next1 {
+    right: -40px;
+}
+.gol_team_button .swiper-button-prev1 {
+    left: -40px;
+}
+.gol_team_button > div:hover {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+}
+.gol_team_button > div:hover svg {
+    fill: var(--main-green-color);
+}
+/********************************************************
+    12. Testimonial CSS Start
+********************************************************/
+.gol_testimonial_wrapper {
+    background: url(../images/index3/testimonial_bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+    padding: 72px 0 80px;
+}
+.gol_testimonial_wrapper:before {
+    content: "";
+    position: absolute;
+    background: rgba(0, 0, 0, 0.80);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.gol_testimonials_section {
+    background: rgba(255, 255, 255, 0.14);
+    color: var(--main-bg-color);
+    padding: 50px 80px;
+}
+.gol_client_img {
+    display: flex;
+    align-items: center;
+}
+.gol_client_img img {
+    margin: 0 12px;
+    width: 60px;
+    height: 60px;
+    border: none;
+    border-radius: 50%;
+}
+.gol_client_quote {
+    text-align: left;
+}
+.gol_testimonial_section {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.gol_testimonial_icon svg {
+    height: 20px;
+    fill: var(--main-bg-color);
+}
+.gol_client_quote h4 {
+    color: var(--main-bg-color);
+    font-family: 'Cormorant', serif;
+    font-size: 22px;
+}
+.gol_testimonial_section > p {
+    font-size: 18px;
+    margin-top: 16px;
+    background-image: url(../images/index3/qoute.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.pagination {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 22px 0 0;
+}
+.pagination span.swiper-pagination-bullet {
+    width: 26px;
+    height: 4px;
+    border-radius: 0;
+    margin: 0 6px;
+    background: var(--main-gray-light);
+}
+.pagination span.swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background: var(--main-green-light);
+}
+/********************************************************
+    13. Blog CSS Start
+********************************************************/
+.gol_blog_wrapper {
+    padding: 72px 0 30px;
+}
+.gol_blog_img {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+.gol_blog_img img {
+    width: 100%;
+}
+.gol_blog_date {
+    background: var(--main-green-color);
+    color: var(--main-bg-color);
+    width: 122px;
+    display: inline-block;
+    text-align: center;
+    padding: 7px 0;
+    position: absolute;
+    right: 0;
+    top: 20px;
+    font-weight: 500;
+}
+.gol_blog_info li {
+    display: inline-block;
+    margin-left: 14px;
+}
+.gol_blog_info li:first-child {
+    margin-left: 0;
+}
+.blog_text {
+    padding: 25px 0 0;
+}
+.gol_blog_info {
+    margin-bottom: 11px;
+}
+.gol_blog_info li img {
+    margin-right: 10px;
+    vertical-align: middle;
+}
+.gol_blog_info a {
+    color: var(--main-gol-txt-color);
+}
+.gol_blog_title {
+    font-size: 26px;
+    font-weight: 700;
+}
+.gol_blog_title:hover {
+    color: var(--main-green-color);
+}
+.gol_blog_thumb {
+    background: var(--main-bg-color);
+    margin-bottom: 42px;
+}
+.gol_blog_title, .gol_blog_title:hover {
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+/********************************************************
+    14. Contact CSS Start
+********************************************************/
+.gol_contant_container {
+    background: var(--main-bg-color);
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.12);
+}
+.gol_contact_form {
+    padding: 43px 20px 45px 50px;
+}
+.gol_form_field {
+    border: 1px solid var(--main-light-blue);
+    width: 100%;
+    height: 50px;
+    margin-top: 30px;
+    padding: 0 15px;
+}
+textarea.gol_form_field {
+    height: 125px;
+    padding: 20px 15px;
+    resize: none;
+}
+.gol_map iframe {
+    display: block;
+    width: 100%;
+    height: 645px;
+    margin: 0 auto;
+}
+.gol_contact_form h4 {
+    font-size: 32px;
+    font-weight: 700;
+}
+.gol_form_field::placeholder, .gol_form_field::-webkit-input-placeholder {
+	color: var(--main-light-blue);
+}
+.gol_form_field:-moz-placeholder, .gol_form_field:-ms-input-placeholder {
+	color: var(--main-light-blue);
+}
+.gol_contact_form .gol_btn {
+    margin-top: 21px;
+}
+.gol_contact_info_wrapper {
+    background: var(--main-green-color);
+    color: var(--main-bg-color);
+    padding: 50px 30px 41px 30px;
+    margin-right: -1px;
+}
+.gol_contact_admin img {
+    width: 100px;
+    height: 100px;
+    border: none;
+    border-radius: 100%;
+}
+.gol_contact_admin {
+    text-align: center;
+}
+.gol_contact_admin h4 {
+    font-size: 20px;
+    color: var(--main-bg-color);
+    margin: 12px 0 11px;
+    line-height: 30px;
+}
+.gol_contact_admin ul li {
+    display: inline-block;
+    margin: 0 3px;
+}
+.gol_contact_admin ul li a {
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 100%;
+    background: var(--main-green-medium);
+    display: inline-block;
+    line-height: 45px;
+}
+.gol_contact_admin ul li a:hover {
+    background: var(--main-bg-color);
+}
+.gol_contact_admin ul li a svg {
+    height: 20px;
+    fill: var(--main-bg-color);
+}
+.gol_contact_admin ul li a:hover svg {
+    fill: var(--main-green-color);
+}
+.gol_contact_admin > a {
+    color: var(--main-bg-color);
+    font-size: 22px;
+    font-weight: 600;
+    margin: 16px 0 0;
+    display: inline-block;
+}
+.gol_contact_time {
+    position: relative;
+    padding: 27px 0 0;
+    margin: 26px 0 0;
+}
+.gol_contact_time:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -30px;
+    right: -30px;
+    background: var(--main-bg-color);
+    height: 1px;
+    opacity: .6;
+}
+.gol_contact_time h4 {
+    text-align: center;
+    color: var(--main-bg-color);
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 7px;
+}
+.gol_contact_time ul {
+    display: inline-block;
+    width: 100%;
+}
+.gol_contact_time ul li {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.gol_contact_wrapper {
+    margin-top: -275px;
+}
+/********************************************************
+    15. Footer CSS Start
+********************************************************/
+.gol_footer_wrapper {
+    background-color: var(--main-bg-color);
+    padding: 80px 0 45px;
+}
+.gol_footer_heading {
+    position: relative;
+    color: var(--main-link-color);
+    font-size: 22px;
+    font-weight: 700;
+    margin: 12px 0 24px;
+    padding: 0 0 11px 0;
+}
+.gol_footer_heading:before {
+    position: absolute;
+    left: 0;
+    height: 2px;
+    background: var(--main-gray-color);
+    bottom: 0;
+    content: "";
+    width: 90px;
+}
+.gol_footer_heading:after {
+    position: absolute;
+    left: 0;
+    height: 4px;
+    background: var(--main-green-color);
+    bottom: -1px;
+    content: "";
+    width: 45px;
+    border: none;
+    border-radius: 6px;
+}
+img.footer_logo {
+    margin-bottom: 24px;
+}
+.gol_address_wrap {
+    margin-top: 6px;
+}
+.gol_address_wrap h4 {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--main-green-color);
+    margin-bottom: 2px;
+}
+.gol_footer_twitter ul li {
+    padding-left: 30px;
+    margin-bottom: 15px;
+    position: relative;
+    color: var(--main-link-color);
+}
+.gol_footer_twitter li:last-child {
+    margin-bottom: 0;
+}
+.gol_footer_twitter ul li > span {
+    position: absolute;
+    left: 0;
+    top: 4px;
+    font-size: 22px;
+    color: var(--main-green-color);
+}
+.gol_footer_post li > a {
+    width: calc(100% - 95px);
+    display: inline-block;
+}
+.gol_twitter_date, .gol_post_date {
+    color: var(--main-green-color);
+}
+.gol_footer_post li {
+    position: relative;
+    color: var(--main-link-color);
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.gol_footer_post li:last-child {
+    margin-bottom: 0;
+}
+.gol_footer_post li img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+.gol_footer_menu ul li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 13px;
+}
+.gol_footer_menu ul li:last-child {
+    margin-bottom: 0;
+}
+.gol_footer_menu ul li:before {
+    content: "\f105";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    position: absolute;
+    left: 0;
+    top: -2px;
+    font-size: 20px;
+}
+.gol_widgets a {
+    color: var(--main-gol-txt-color);
+}
+.gol_widgets a:hover, .gol_copyright_wrapper a {
+    color: var(--main-green-color);
+}
+.gol_copyright_wrapper {
+    background: var(--main-link-color);
+    padding: 14px 0 11px;
+    color: var(--main-bg-color);
+}
+/********************************************************
+	16. Responsive CSS Start
+********************************************************/
+@media (min-width: 1199.98px) {
+    .gol_banner_text {
+        width: 60%;
+        margin: auto;
+    }
+    .gol_service_heading {
+        padding-left: 35%;
+        padding-right: 15%;
+    }
+    .gol_footer_wrapper {
+        background-image: url(../images/index3/footer_bg.jpg);
+        background-position: bottom right;
+        background-repeat: no-repeat;
+    }
+    .gol_partner_wrapper .container-fluid {
+        max-width: 1730px;
+    }
+    .gol_address_wrap p {
+        width: 60%;
+    }
+}
+
+@media (min-width: 991.98px) {
+    .gol_services_section .col-lg-5 {
+        -ms-flex: 0 0 45.33333%;
+        flex: 0 0 45.33333%;
+        max-width: 45.33333%;
+    }
+    .gol_services_section .col-lg-7 {
+        -ms-flex: 0 0 54.333333%;
+        flex: 0 0 54.333333%;
+        max-width: 54.33333%;
+    }
+    .gol_footer_wrapper {
+        padding: 230px 0 43px;
+        margin-top: -150px;
+    }
+    ul.sub_menu {
+        top: 40px;
+    }
+    .gol_counter_icon:before {
+        content: unset;
+    }
+}
+
+@media (max-width: 1799.98px) {
+    .gol_footer_wrapper {
+        background-image: none;
+    }
+}
+
+@media (max-width: 1600px) {
+    .gol_whyUs_container {
+        padding: 60px 40px 68px;
+    }
+}
+
+@media (max-width: 1500px) {
+	.gol_whyUs_container {
+        padding: 60px 20px 68px;
+    }
+}
+
+@media (max-width: 1399px) {
+	.gol_whyUs_container {
+        padding: 20px 15px 28px;
+    }
+    .gol_subHeading {
+        font-size: 20px;
+    }
+    .gol_team_button .swiper-button-next1 {
+        right: 0;
+    }
+    .gol_team_button .swiper-button-prev1 {
+        left: 0;
+    }
+    .gol_footer_wrapper {
+        background-position: top right;
+    }
+}
+
+@media (max-width: 1198.98px) {
+    .gol_about_section {
+        padding: 0 0 14px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+	.main_menu_wrapper ul > li > a {
+        padding: 12px 8px;
+    }
+    .gol_contact_time ul li {
+        margin-bottom: 10px;
+    }
+    .gol_contact_time ul li:last-child {
+        margin-bottom: 0;
+    }
+    .gol_contact_time ul li span {
+        width: 100%;
+        text-align: center;
+    }
+    .gol_contact_admin > a {
+        font-size: 18px;
+    }
+    .gol_whyUs_container {
+        padding: 20px 0 28px 15px;
+    }
+    .gol_footer_wrapper {
+        padding: 230px 0 41px;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .gol_search_wrap ul {
+        align-items: center;
+    }
+    .main_menu_wrapper li.has_submenu:before, .main_menu_wrapper li.has_submenu:after {
+        background: var(--main-green-color);
+    }
+    .gol_whyUs_container .tabs_nav li.active:before {
+        content: unset;
+    }
+    .gol_contact_form {
+        padding: 43px 20px 50px;
+    }
+    .gol_blog_info li {
+        margin-left: 12px;
+    }
+    .gol_blog_title, .gol_team_identity a, .gol_whyUs_container .tabs_nav li h4 {
+        font-size: 22px;
+    }
+    .gol_team_social {
+        margin-top: 12px;
+    }
+    .gol_member_designation {
+        padding-top: 60px;
+    }
+    .gol_whyUs_container {
+        padding: 72px 0 80px;
+    }
+    .gol_testimonials_section {
+        padding: 50px 15px;
+    }
+    header {
+        position: relative;
+    }
+    .gol_banner_section {
+        padding: 220px 0 200px;
+    }
+    .gol_logo {
+        text-align: left;
+    }
+    .gol_counter_wrapper .counter_holder:before {
+        content: unset;
+    }
+    .gol_partner_wrapper {
+        padding: 80px 0 79px;
+    }
+    .counter_item {
+        margin-bottom: 36px;
+    }
+    .gol_counter_wrapper {
+        padding: 80px 0 40px;
+    }
+    .gol_team_wrapper {
+        padding: 72px 0 74px;
+    }
+    .gol_blog_wrapper {
+        padding: 72px 0 31px;
+    }
+    .gol_contact_time {
+        padding: 27px 0 0;
+        margin: 29px 0 0;
+    }
+    .gol_footer_wrapper {
+        padding: 80px 0 50px;
+    }
+    .single_tab img {
+        height: auto;
+        width: 100%;
+    }
+    .gol_contact_info_wrapper {
+        padding: 50px 30px 44px 30px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .gol_header_wrapper {
+        padding: 11px 0 12px 0;
+    }
+    .gol_header_info {
+        position: relative;
+        width: 100%;
+        margin: 12px 30px 0px 30px;
+    }
+    .gol_header_info:before{
+        content: unset;
+    }
+    .gol_banner_text h2 {
+        font-size: 40px;
+    }
+    .gol_banner_text .gol_bg_title {
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 3px;
+        padding: 10px;
+    }
+    .gol_contact_info {
+        height: 50px;
+        line-height: 50px;
+        font-size: 20px;
+        top: -26px;
+    }
+    .gol_contact_info span {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        top: 5px;
+    }
+    .gol_contact_info svg {
+        width: 20px;
+    }
+    .video_icon {
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+    }
+    .gol_about_detail h2, .gol_heading h4, .gol_contact_form h4 {
+        font-size: 26px;
+    }
+    .gol_services_section .gol_services {
+        padding: 0 15px;
+    }
+    .gol_bg_title {
+        line-height: 30px;
+        letter-spacing: 3px;
+    }
+    .gol_banner_section {
+        padding: 200px 0 200px;
+    }
+    .gol_about_detail {
+        margin-top: -16px;
+    }
+    .gol_about_detail {
+        margin-top: -16px;
+    }
+    .service_slider.swiper-container {
+        padding: 35px 0;
+    }
+    .gol_services_section {
+        padding: 74px 0 45px;
+    }
+    .gol_services_section {
+        padding: 74px 0 45px;
+    }
+    .gol_testimonial_wrapper {
+        padding: 74px 0 80px;
+    }
+    .gol_blog_thumb {
+        margin-bottom: 33px;
+    }
+    .gol_blog_wrapper {
+        padding: 74px 0 40px;
+    }
+    .gol_contact_form {
+        padding: 44px 20px 50px;
+    }
+    .gol_whyUs_container {
+        padding: 74px 0 80px;
+    }
+    .gol_team_wrapper {
+        padding: 75px 0 74px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .gol_banner_text .gol_btn {
+        margin: 15px 8px 0;
+    }
+    .gol_team_social li a {
+        padding: 6px 0;
+        display: inline-block;
+    }
+    .menu_btn {
+        padding: 15px 0 0;
+    }
+    .gol_header_wrapper {
+        padding: 1px 0 12px 0;
+    }
+    .gol_banner_section {
+        padding: 100px 0 100px;
+    }
+    .gol_banner_button {
+        display: none;
+    }
+    .gol_banner_text {
+        padding: 0;
+    }
+    .gol_counter_icon:before {
+        left: 0;
+        right: 0;
+    }
+    
+    
+    
+}

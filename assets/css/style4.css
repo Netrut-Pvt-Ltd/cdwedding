@@ -1,0 +1,1358 @@
+/*--------------------- Copyright (c) 2020 ----------------------- 
+[Master Stylesheet] 
+Project: Multifarious GYM
+Version: 1.0.0 
+Author: Kamleshyadav
+ ------------------------------------------------------------------- 
+[Table of contents] 
+	1. Global CSS Start
+	2. Comman CSS Start
+    3. Preloader CSS Start
+    4. Header CSS Start
+    5. Banner CSS Start
+    6. Assistant CSS Start
+    7. About CSS Start
+    8. Service CSS Start
+    9. Case Study CSS Start
+    10. Testimonial CSS Start
+    11. Practice Area CSS Start
+    12. Team CSS Start
+    13. Blog CSS Start
+    14. Partner CSS Start
+    15. Newsletter CSS Start
+    16. Footer CSS Start
+    17. Responsive CSS Start
+-------------------------------------------------------------------*/
+/********************************************************
+    1. Global CSS Start
+********************************************************/
+body {
+    color: var(--main-vot-text-color);
+    background: var(--main-bg-color);
+}
+a, a:hover, a:focus {
+	color: var(--main-link-color);
+}
+h1, h2, h3, h4, h5, h6 {
+    color: var(--main-charrey-color);
+    font-family: 'Cormorant', serif;
+    font-weight: 500;
+}
+/********************************************************
+    2. Comman CSS Start
+********************************************************/
+.vot_btn {
+    background: var(--main-charrey-color);
+    color: var(--main-bg-color);
+    display: inline-block;
+    border: none;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    padding: 0 15px;
+    min-width: 170px;
+    margin-top: 10px;
+    z-index: 0;
+    overflow: hidden;
+    position: relative;
+    letter-spacing: .5px;
+    font-weight: 400;
+    font-family: 'Lato', sans-serif;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.06);
+}
+.vot_btn:hover, .vot_btn.vot_white {
+    color: var(--main-charrey-color);
+    background: var(--main-bg-color);
+}
+.vot_btn.vot_white:hover {
+    color: var(--main-charrey-color);
+    background: var(--main-bg-color);
+}
+.vot_heading {
+    margin-bottom: 41px;
+}
+.vot_heading h4 {
+    font-size: 42px;
+    font-weight: 700;
+    position: relative;
+    margin: 0 0 2px;
+    padding: 0;
+    color: var(--main-link-color);
+}
+.vot_heading.white h4 {
+    color: var(--main-bg-color);
+}
+.vot_heading p {
+    margin-top: 8px;
+}
+.vot_subHeading {
+    font-size: 38px;
+    font-weight: 700;
+    color: var(--main-link-color);
+    margin-bottom: 13px;
+}
+.vot_title {
+    color: var(--main-link-color);
+    font-weight: 700;
+    padding-bottom: 8px;
+    font-size: 28px;
+    position: relative;
+}
+.vot_title:before {
+    content: "";
+    background: var(--main-charrey-color);
+    width: 50px;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+}
+.vot_title:after {
+    content: "";
+    background: var(--main-charrey-color);
+    width: 75px;
+    height: 1px;
+    bottom: 3px;
+    left: 0;
+    position: absolute;
+    
+}
+#scroll {
+    background: var(--main-charrey-color);
+    color: var(--main-bg-color);
+}
+/********************************************************
+    3. Preloader CSS Start
+********************************************************/
+.preloader_active .preloader_holder {
+    background-color: var(--main-bg-color);
+}
+.preloader_active .preloader_holder .preloader span {
+    box-shadow: 0px 0px 0px 0px var(--main-charrey-color);
+}
+@-webkit-keyframes loadingCircles{
+    0%{-webkit-transform: scale(0); opacity: 1; box-shadow: 0px 0px 0px 10px var(--main-charrey-color);}
+    100%{-webkit-transform: scale(1); opacity: 0; box-shadow: 0px 0px 0px 2px var(--main-charrey-color);}
+}
+@-moz-keyframes loadingCircles{
+    0%{-moz-transform: scale(0); opacity: 1; box-shadow: 0px 0px 0px 10px var(--main-charrey-color);}
+    100%{-moz-transform: scale(1); opacity: 0; box-shadow: 0px 0px 0px 2px var(--main-charrey-color);}
+}
+@keyframes loadingCircles{
+    0%{transform: scale(0); opacity: 1; box-shadow: 0px 0px 0px 10px var(--main-charrey-color);}
+    100%{transform: scale(1); opacity: 0; box-shadow: 0px 0px 0px 2px var(--main-charrey-color);}
+}
+.preloader_open:before, .preloader_open:after {
+    background-color: var(--main-bg-color);
+}
+/********************************************************
+    4. Header CSS Start
+********************************************************/
+.vot_header_top {
+    padding: 22px 0 6px;
+    background: var(--main-darkBlue-color);
+    color: var(--main-bg-color);
+}
+.vot_header_info ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+.vot_header_icon svg {
+    height: 18px;
+    fill: var(--main-charrey-color);
+}
+.vot_header_info ul li {
+    margin-bottom: 16px;
+    margin-left: 80px;
+}
+.vot_header_info ul li:first-child {
+    margin-left: 0;
+}
+.vot_header_info ul li a {
+    color: var(--main-bg-color);
+}
+.vot_header_icon {
+    margin-right: 6px;
+}
+.vot_header_wrapper {
+    padding: 23px 0;
+}
+.vot_header_info ul li a > span {
+    color: var(--main-charrey-color);
+    margin-right: 4px;
+}
+.searchBtn, .searchBtn:focus, .searchBtn:hover {
+    color: var(--main-charrey-color);
+}
+.vot_header_wrapper .vot_btn {
+    min-width: 200px;
+    margin: 0 0 0 40px;
+    font-family: 'Yantramanav', sans-serif;
+    padding: 0 15px 0;
+    letter-spacing: 0;
+}
+.vot_search_wrap .display_flex {
+    align-items: center;
+}
+.vot_search_wrap .display_flex li {
+    display: flex;
+}
+/********************************************************
+    5. Banner CSS Start
+********************************************************/
+.vot_banner_section {
+    background-color: var(--main-border-color);
+    padding: 15px 0 0;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.vot_banner_section:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(28, 32, 44, 0.7);
+}
+.vot_banner_section .row {
+    align-items: flex-end;
+}
+.vot_banner_section.slide1 {
+    background-image: url(../images/index4/slide1.jpg);
+}
+.vot_banner_section.slide2 {
+    background-image: url(../images/index4/slide2.jpg);
+}
+.vot_banner_section.slide3 {
+    background-image: url(../images/index4/slide3.jpg);
+}
+.vot_banner_text {
+    padding: 8px 0 31px;
+}
+.vot_banner_text h1 {
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 80px;
+    margin-bottom: 7px;
+}
+.vot_banner_text h1 span {
+    color: var(--main-bg-color);
+}
+.vot_banner_text p {
+    font-size: 18px;
+    color: var(--main-gray-text);
+}
+.vot_banner_text .vot_btn {
+    margin: 22px 0 0;
+}
+.vot_banner_button {
+    position: absolute;
+    top: 43.6%;
+    left: 0;
+    right: 0;
+}
+.vot_banner_button > div {
+    background: var(--main-gray-dark);
+    color: var(--main-bg-color);
+    width: 50px;
+    height: 100px;
+    position: absolute;
+    z-index: 1;
+    writing-mode: vertical-rl;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 14px;
+    cursor: pointer;
+}
+.vot_banner_button > div:hover {
+    background: var(--main-charrey-color);
+}
+.ButtonPrev {
+    left: 0;
+    padding: 0 3px 0 0;
+}
+.ButtonNext {
+    right: 0;
+    padding: 0 2px 0 0;
+}
+.vot_banner_button > div, .vot_banner_button > div:hover {
+    -webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
+/********************************************************
+    6. Assistant CSS Start
+********************************************************/
+.vot_assistant_wrapper {
+    background: var(--main-charrey-color);
+    color: var(--main-bg-color);
+    width: 100%;
+    display: inline-block;
+}
+.vot_field_holder {
+    width: 100%;
+    padding: 0 15px;
+}
+.vot_field_holder:last-of-type {
+    width: 200px;
+}
+.vot_assistant_form form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.vot_form_field {
+    border: 1px solid rgba(255, 255, 255, 0.26);
+    width: 100%;
+    height: 50px;
+    margin-bottom: 30px;
+    padding: 0 15px;
+    color: var(--main-bg-color);
+    background: transparent;
+}
+.vot_field_holder label {
+    font-size: 18px;
+    font-family: 'Cormorant', serif;
+    font-weight: 500;
+    margin-bottom: 13px;
+}
+.vot_assistant_inner {
+    margin: 20px 5px;
+    border: 1px solid rgba(255, 255, 255, 0.26);
+    padding: 48px 45px 30px;
+}
+.vot_assistant_wrapper .vot_heading {
+    margin-bottom: 22px;
+}
+.vot_assistant_form form a.vot_btn {
+    margin-top: 18px;
+}
+/********************************************************
+    7. About CSS Start
+********************************************************/
+.vot_about_section {
+    background: var(--main-bg-color);
+    padding: 80px 0 50px;
+}
+.vot_about_section .row {
+    align-items: center;
+}
+.vot_about_text > ul > li {
+    display: inline-flex;
+    margin-right: 60px;
+}
+.vot_about_text > ul > li:last-child {
+    margin-right: 0;
+}
+.int_count2_box {
+    color: var(--main-link-color);
+    font-size: 18px;
+}
+.counter_item h1 {
+    font-size: 38px;
+    color: var(--main-charrey-color);
+    font-weight: 700;
+    background-repeat: no-repeat;
+    background-position: center top;
+    padding: 0px 0 13px;
+    margin: 6px 0 4px;
+    text-align: center;
+}
+.back_img1 {
+    background-image: url(../images/index4/01.png);
+}
+.back_img2 {
+    background-image: url(../images/index4/02.png);
+}
+.back_img3 {
+    background-image: url(../images/index4/03.png);
+}
+.vot_about_img {
+    text-align: right;
+}
+.vot_about_img img {
+    position: relative;
+    z-index: 1;
+    margin: 40px 0 0;
+    width: calc(100% - 40px);
+}
+.vot_about_img:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    background: var(--main-charrey-color);
+    z-index: 0;
+    width: calc(100% - 40px);
+    top: 0;
+    bottom: 40px;
+    right: 0;
+    opacity: .6;
+}
+/********************************************************
+    8. Service CSS Start
+********************************************************/
+.vot_services_wrapper {
+    padding: 69px 0 50px;
+    background: var(--main-gray-bg);
+}
+.vot_services_sectionBg {
+    content: "";
+    background-color: var(--main-charrey-color);
+    background-position: center;
+    background-size: 40%;
+    background-repeat: no-repeat;
+}
+.vot_services_sectionBg.service1 {
+    background-image: url(../images/index4/service1.svg);
+}
+.vot_services_sectionBg.service2 {
+    background-image: url(../images/index4/service2.svg);
+}
+.vot_services_sectionBg.service3 {
+    background-image: url(../images/index4/service3.svg);
+}
+.vot_services_sectionBg.service4 {
+    background-image: url(../images/index4/service4.svg);
+}
+.vot_services_sectionBg.service5 {
+    background-image: url(../images/index4/service5.svg);
+}
+.vot_services_sectionBg.service6 {
+    background-image: url(../images/index4/service6.svg);
+}
+.vot_services_sectionBg a {
+    color: var(--main-vot-text-color);
+}
+.vot_services_section {
+    background-color: var(--main-bg-color);
+    padding: 30px 30px 21px;
+    margin-bottom: 30px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.08);
+    position: relative;
+}
+.vot_services_sectionBg:hover .vot_services_section {
+    background-color: transparent;
+    color: var(--main-bg-color);
+}
+.vot_icon_bg {
+    height: 65px;
+    width: 65px;
+    line-height: 65px;
+    display: inline-block;
+    background: var(--main-pink-color);
+    border: none;
+    border-radius: 50%;
+    text-align: center;
+    margin-right: 20px;
+}
+.vot_icon_bg svg {
+    height: 34px;
+    fill: var(--main-charrey-color);
+}
+.vot_services_inner {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.vot_services_inner .vot_title:before, .vot_services_inner .vot_title:after {
+    background: var(--main-gray-version);
+}
+.vot_services_sectionBg:hover .vot_services_inner .vot_title:before, .vot_services_sectionBg:hover .vot_services_inner .vot_title:after{
+    background-color: var(--main-bg-color);
+}
+.vot_services_sectionBg:hover .vot_title {
+    color: var(--main-bg-color)
+}
+.vot_services_sectionBg, .vot_services_sectionBg:hover, .vot_services_sectionBg .vot_services_section, .vot_services_sectionBg:hover .vot_services_section, .vot_services_inner .vot_title:before, .vot_services_inner .vot_title:after, .vot_services_sectionBg:hover .vot_services_inner .vot_title:before, .vot_services_sectionBg:hover .vot_services_inner .vot_title:after  {
+    -webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
+/********************************************************
+    9. Case Study CSS Start
+********************************************************/
+.vot_caseStudy_wrapper {
+    padding: 69px 0 50px;
+    background: var(--main-bg-color);
+}
+.vot_caseStudy_wrapper .row {
+    align-items: center;
+}
+.vot_study_desc {
+    margin-bottom: 20px;
+}
+.vot_caseStudy_container > h4, .vot_caseStudy_laws .tabs_content h6 {
+    color: var(--main-link-color);
+    font-weight: 700;
+    font-size: 32px;
+    margin-bottom: 5px;
+}
+.vot_caseStudy_laws {
+    display: flex;
+    border: 1px solid var(--main-gym-border);
+    margin-top: 21px;
+    flex-wrap: wrap;
+}
+.vot_caseStudy_laws .tabs_nav {
+    width: 170px;
+    border-right: 1px solid var(--main-gym-border);
+}
+.vot_caseStudy_laws .tabs_content {
+    width: calc(100% - 170px);
+    padding: 30px;
+    height: 300px;
+    overflow-y: auto;
+}
+.vot_caseStudy_laws .tabs_content::-webkit-scrollbar {
+    width: 4px;
+}
+.vot_caseStudy_laws .tabs_content::-webkit-scrollbar-track {
+    background-color: var(--main-gym-border);
+}
+.vot_caseStudy_laws .tabs_content::-webkit-scrollbar-thumb {
+    background-color: var(--main-charrey-color);
+    border: none;
+    border-radius: 20px;
+}
+.vot_caseStudy_laws .tabs_nav li a {
+    color: var(--main-link-color);
+    font-weight: 700;
+    font-size: 20px;
+    display: inline-block;
+    font-family: 'Cormorant', serif;
+    padding: 0 20px;
+    width: 100%;
+    position: relative;
+    height: 50px;
+    line-height: 50px;
+    border-bottom: 1px solid var(--main-gym-border);
+}
+.vot_caseStudy_laws .tabs_nav li:last-child a {
+    border-bottom: none;
+}
+.vot_caseStudy_laws .tabs_nav li.active a {
+    color: var(--main-bg-color);
+    background: var(--main-charrey-color);
+}
+.vot_caseStudy_laws .tabs_nav li.active a:before {
+    content: "";
+    position: absolute;
+    right: -8px;
+    z-index: 1;
+    border-left: 8px solid var(--main-charrey-color);
+    border-bottom: 8px solid transparent;
+    border-top: 8px solid transparent;
+    top: 15px;
+    background: transparent;
+}
+/********************************************************
+    10. Testimonial CSS Start
+********************************************************/
+.vot_testimonial_wrapper {
+    position: relative;
+    width: 100%;
+    padding: 80px 0 39px;
+    background: var(--main-gray-bg);
+}
+.vot_testimonials_section {
+    background: var(--main-charrey-color);
+    color: var(--main-bg-color);
+    padding: 50px 50px 18px 50px;
+    margin-bottom: 41px;
+}
+.vot_client_img {
+    display: flex;
+    align-items: center;
+}
+.vot_client_img img {
+    margin: 0 12px;
+    object-fit: cover;
+    border: none;
+    border-radius: 100%;
+    height: 60px;
+    width: 60px;
+}
+.vot_client_quote {
+    text-align: left;
+    line-height: 16px;
+}
+.vot_testimonial_section {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.vot_testimonial_icon svg {
+    height: 20px;
+    fill: var(--main-bg-color);
+}
+.vot_client_quote h4 {
+    color: var(--main-bg-color);
+    font-family: 'Cormorant', serif, serif;
+    font-size: 22px;
+}
+.vot_testimonial_section > p {
+    font-size: 18px;
+    margin-top: 24px;
+    background-image: url(../images/index4/qoute.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.pagination {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 40px 0 0;
+}
+.pagination span.swiper-pagination-bullet {
+    width: 25px;
+    height: 4px;
+    border-radius: 0;
+    margin: 0 3px;
+    background: var(--main-dark-red);
+    opacity: 1;
+}
+.pagination span.swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background: var(--main-bg-color);
+}
+.vot_testimonial_wrapper .vot_heading {
+    width: 100%;
+}
+/********************************************************
+    11. Practice Area CSS Start
+********************************************************/
+.vot_practice_wrapper {
+    padding: 68px 0 80px;
+    background: var(--main-bg-color);
+}
+.vot_practice_section {
+    background: var(--main-gray-bg);
+}
+.vot_practice_section a {
+    display: flex;
+    flex-wrap: wrap;
+    color: var(--main-vot-text-color);
+    align-items: center;
+}
+.vot_practice_img {
+    width: 250px;
+}
+.vot_practice_text {
+    width: calc(100% - 250px);
+    padding:  15px 20px 15px 43px;
+}
+.vot_practice_section .vot_title {
+    margin-bottom: 14px;
+}
+.vot_practice_img img {
+    width: 100%;
+}
+.vot_practice_section:hover{
+    background: var(--main-charrey-color);
+}
+.vot_practice_section:hover .vot_title:before, .vot_practice_section:hover .vot_title:after {
+    background: var(--main-bg-color);
+}
+.vot_practice_section:hover a, .vot_practice_section:hover .vot_title {
+    color: var(--main-bg-color);
+}
+.vot_practice_section, .vot_practice_section:hover, .vot_practice_section .vot_title, .vot_practice_section:hover .vot_title, .vot_practice_section .vot_title:before, .vot_practice_section .vot_title:after, .vot_practice_section:hover .vot_title:before, .vot_practice_section:hover .vot_title:after {
+    -webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
+/********************************************************
+    12. Team CSS Start
+********************************************************/
+.vot_team_wrapper {
+    padding: 69px 0 71px;
+    background: var(--main-gray-bg);
+}
+.vot_team_section {
+    position: relative;
+    background: var(--main-bg-color);
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.06);
+}
+.vot_team_section:hover {
+    background: var(--main-charrey-color);
+}
+.vot_team_section:hover .vot_team_identity a, .vot_team_section:hover .vot_team_identity h6 {
+    color: var(--main-bg-color);
+}
+.team_slider {
+    padding-bottom: 27px;
+}
+.vot_team_img img {
+    width: 100%;
+}
+.vot_team_identity {
+    padding: 19px 15px 17px;
+}
+.vot_team_identity a {
+    color: var(--main-link-color);
+    font-weight: 700;
+    padding-bottom: 8px;
+    font-size: 26px;
+    position: relative;
+    font-family: 'Cormorant', serif;
+    display: inline-block;
+}
+.vot_team_identity h6 {
+    font-family: 'Yantramanav', sans-serif;
+    font-weight: 400;
+}
+.swiperPagination {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+}
+.swiperPagination span.swiper-pagination-bullet {
+    width: 25px;
+    height: 4px;
+    border-radius: 0;
+    margin: 0 3px;
+    background: var(--main-gray-version2);
+}
+.swiperPagination span.swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background: var(--main-charrey-color);
+}
+.vot_team_section, .vot_team_section:hover, .vot_team_section:hover .vot_team_identity a, .vot_team_section:hover .vot_team_identity h6, .vot_team_identity a, .vot_team_identity h6 {
+    -webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
+/********************************************************
+    13. Blog CSS Start
+********************************************************/
+.vot_blog_wrapper {
+    padding: 69px 0 41px;
+}
+.vot_blog_img {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+.vot_blog_img img {
+    width: 100%;
+}
+.vot_blog_info li {
+    display: inline-block;
+    padding-left: 15px;
+    position: relative;
+    font-size: 14px;
+}
+.vot_blog_info li:before {
+    content: "//";
+    position: absolute;
+    left: 0;
+    color: var(--main-charrey-color);
+}
+.vot_blog_info li:first-child:before {
+    content: unset;
+}
+.vot_blog_info li:first-child {
+    padding-left: 0;
+}
+.blog_text {
+    padding: 22px 0 0;
+}
+.vot_blog_info {
+    margin-bottom: 4px;
+}
+.vot_blog_info a {
+    color: var(--main-charrey-color);
+}
+.vot_blog_title {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--main-link-color);
+    margin-bottom: 6px;
+}
+.vot_blog_title:hover {
+    color: var(--main-charrey-color);
+}
+.vot_blog_thumb {
+    background: var(--main-bg-color);
+    margin-bottom: 30px;
+}
+.vot_blog_title, .vot_blog_title:hover {
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+/********************************************************
+    14. Partner CSS Start
+********************************************************/
+.vot_partner_wrapper {
+    padding: 80px 0;
+    background: var(--main-gray-bg);
+}
+.vot_partners_container img {
+    filter: grayscale(100%);
+    height: 92px;
+}
+.vot_partners_container:hover img {
+    filter: grayscale(0%);
+}
+.vot_partners_container:hover img, .vot_partners_container:hover, .vot_partners_container img, .vot_partners_container {
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+/********************************************************
+    15. Newsletter CSS Start
+********************************************************/
+.vot_newsletter_wrapper {
+    padding: 81px 0 60px;
+    background-image: url(../images/index4/newsletter_bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.vot_newsletter_wrapper .row {
+    align-items: flex-end;
+}
+.vot_newsletter_heading h1 {
+    color: var(--main-bg-color);
+    font-size: 38px;
+    font-weight: 700;
+    margin: 0 0 19px 0;
+}
+.vot_newsletter_form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+.vot_newsletter_form form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    width: 75%;
+}
+.vot_newsletter_form form label {
+    color: var(--main-bg-color);
+    font-size: 32px;
+    font-weight: 700;
+    font-family: 'Cormorant', serif;
+    width: 100%;
+    margin-bottom: 26px;
+    line-height: 28px;
+}
+.vot_subscribe_holder {
+    width: 100%;
+    display: flex;
+}
+.vot_subscribe_holder input {
+    border: none;
+    height: 60px;
+    padding: 0 30px;
+    width: 100%;
+    background: var(--main-dark-red2);
+    color: var(--main-bg-color);
+}
+.vot_subscribe_holder input::placeholder {
+    color: var(--main-bg-color);
+    opacity: .3;
+}
+.vot_subscribe_holder .vot_btn {
+    height: 60px;
+    margin: 0;
+    line-height: 60px;
+}
+/********************************************************
+    16. Footer CSS Start
+********************************************************/
+.vot_footer_wrapper {
+    background-color: var(--main-link-color);
+    padding: 80px 0 49px;
+    color: var(--main-bg-color);
+}
+.vot_post_date {
+    font-size: 14px;
+}
+.vot_footer_heading {
+    position: relative;
+    color: var(--main-bg-color);
+    font-size: 26px;
+    font-weight: 600;
+    margin: 6px 0 30px;
+    padding: 0 0 11px 0;
+}
+.vot_footer_heading:before {
+    position: absolute;
+    left: 0;
+    height: 1px;
+    background: var(--main-charrey-color);
+    bottom: 4px;
+    content: "";
+    width: 60px;
+}
+.vot_footer_heading:after {
+    position: absolute;
+    left: 0;
+    height: 1px;
+    background: var(--main-charrey-color);
+    bottom: 0;
+    content: "";
+    width: 45px;
+    border: none;
+}
+img.footer_logo {
+    margin-bottom: 28px;
+}
+.vot_address_wrap {
+    margin-top: 6px;
+}
+.vot_address_wrap h4 {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--main-charrey-color);
+    margin-bottom: 2px;
+}
+.vot_footer_twitter ul li {
+    padding-left: 30px;
+    margin-bottom: 15px;
+    position: relative;
+    color: var(--main-bg-color);
+}
+.vot_footer_twitter li:last-child {
+    margin-bottom: 0;
+}
+.vot_footer_twitter ul li > span {
+    position: absolute;
+    left: 0;
+    top: 4px;
+    font-size: 22px;
+    color: var(--main-charrey-color);
+}
+.vot_footer_post li > a {
+    width: calc(100% - 95px);
+    display: inline-block;
+}
+.vot_twitter_date, .vot_post_date {
+    color: var(--main-charrey-color);
+}
+.vot_footer_post li {
+    position: relative;
+    color: var(--main-link-color);
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.vot_footer_post li:last-child {
+    margin-bottom: 0;
+}
+.vot_footer_post li img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+.vot_footer_menu ul li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 7px;
+    line-height: 26px;
+}
+.vot_footer_menu ul li:last-child {
+    margin-bottom: 0;
+}
+.vot_footer_menu ul li:before {
+    content: "\f105";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    position: absolute;
+    left: 0;
+    top: -2px;
+    font-size: 20px;
+}
+.vot_post_title {
+    font-family: 'Cormorant', serif;
+    font-size: 20px;
+    font-weight: 500;
+}
+.vot_widgets a {
+    color: var(--main-bg-color);
+}
+.vot_widgets a:hover, .vot_copyright_wrapper a {
+    color: var(--main-charrey-color);
+}
+.vot_copyright_wrapper {
+    background: var(--main-black4);
+    padding: 12px 0;
+    color: var(--main-bg-color);
+}
+/********************************************************
+	17. Responsive CSS Start
+********************************************************/
+
+@media (min-width: 991.98px) {
+    ul.sub_menu {
+        top: 50px;
+    }
+    .vot_header_wrapper .vot_btn {
+        padding-top: 2px;
+    }
+    .vot_banner_section .container-fluid {
+        max-width: 85%;
+    }
+    .main_menu_wrapper>ul>li.active > a, .main_menu_wrapper>ul>li:hover > a, ul.sub_menu li:hover a {
+        color: var(--main-charrey-color);
+    }
+}
+
+@media (max-width: 1884px) {
+    .vot_practice_text {
+        padding: 15px 15px 15px 30px;
+    }
+}
+
+@media (min-width: 1800px) {
+    header .container-fluid, .vot_newsletter_wrapper .container-fluid {
+        max-width: 1726px;
+    }
+    .vot_newsletter_heading h1 {
+        width: 80%;
+    }
+}
+
+@media (max-width: 1799.98px) {
+    .main_menu_wrapper ul > li > a {
+        padding: 12px 16px;
+    }
+}
+
+@media (max-width: 1460px) {
+	.reverce_row {
+        flex-direction: row-reverse;
+    }
+}
+
+@media (max-width: 1460px) and (min-width: 1200px){
+	.vot_practice_wrapper .col-xl-4 {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+@media (min-width: 1200px) {
+	.vot_heading {
+        width: 34%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .vot_banner_section .container-fluid {
+        max-width: 1510px;
+    }
+    .vot_banner_text {
+        margin-bottom: 207px;
+    }
+    .vot_banner_text p {
+        width: 80%;
+    }
+    .vot_banner_section .container-fluid {
+        max-width: 1100px;
+    }
+    .searchBtn {
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 1540px) {
+    .vot_banner_text {
+        margin-bottom: 38px;
+    }
+}
+
+@media (min-width: 1540px) {
+    .vot_banner_section .container-fluid {
+        max-width: 1460px;
+    }
+}
+
+@media (min-width: 1599.98px) {
+    .vot_banner_section .container-fluid {
+        max-width: 1550px;
+    }
+}
+
+@media (max-width: 1199.98px) {
+    .vot_about_text > ul > li {
+        display: inline-flex;
+        margin-right: 30px;
+    }
+    .vot_title {
+        font-size: 20px;
+    }
+    .vot_heading h4 {
+        font-size: 38px;
+    }
+    .vot_newsletter_form form {
+        width: 90%;
+    }
+    .vot_banner_text h1 {
+        font-size: 52px;
+        line-height: 60px;
+    }
+    .vot_banner_text {
+        margin-bottom: 0;
+        padding: 0 0 38px;
+    }
+    .vot_banner_button {
+        top: 38%;
+    }
+    .vot_assistant_inner {
+        padding: 48px 15px 30px;
+    }
+    .vot_about_section {
+        padding: 71px 0 42px;
+    }
+    .vot_services_wrapper {
+        padding: 71px 0 50px;
+    }
+    .vot_caseStudy_wrapper {
+        padding: 71px 0 50px;
+    }
+    .vot_practice_wrapper {
+        padding: 71px 0 80px;
+    }
+    .vot_team_wrapper {
+        padding: 71px 0 71px;
+    }
+    .vot_blog_wrapper {
+        padding: 71px 0 41px;
+    }
+    .vot_footer_wrapper {
+        padding: 80px 0 41px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+	.vot_header_icon svg {
+        height: 15px;
+    }
+    .vot_header_info ul li {
+        margin-left: 12px;
+        font-size: 14px;
+    }
+    .main_menu_wrapper ul > li > a {
+        padding: 12px 8px;
+    }
+    .vot_header_wrapper .vot_btn {
+        min-width: 190px;
+        margin: 0 0 0 20px;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .vot_banner_section {
+        padding: 50px 0 0;
+    }
+    .vot_banner_text {
+        padding: 41px 50px;
+    }
+    .vot_banner_text h1 {
+        font-size: 50px;
+        line-height: 50px;
+    }
+    .vot_header_info {
+        display: flex;
+        justify-content: space-around;
+    }
+    .vot_search_wrap .display_flex {
+        flex-direction: row-reverse;
+    }
+    .vot_header_wrapper .vot_btn {
+        min-width: 170px;
+        margin: 0;
+    }
+    .main_menu_wrapper li.has_submenu:before, .main_menu_wrapper li.has_submenu:after {
+        background: var(--main-charrey-color);
+    }
+    .vot_assistant_form form {
+        flex-wrap: wrap;
+    }
+    .vot_caseStudy_img {
+        text-align: center;
+        margin-bottom: 1px;
+    }
+    .vot_newsletter_form form {
+        width: 100%;
+        justify-content: flex-start;
+    }
+    .menu_btn {
+        padding: 18px 0 16px 0;
+    }
+    .vot_header_top {
+        padding: 20px 0 6px;
+    }
+    .vot_banner_button {
+        top: 45%;
+    }
+    .vot_about_text {
+        margin-bottom: 5px;
+    }
+    .vot_about_section {
+        padding: 71px 0 51px;
+    }
+    .vot_testimonials_section {
+        padding: 50px 30px 18px 30px;
+    }
+    .vot_team_wrapper {
+        padding: 71px 0 74px;
+    }
+    .vot_blog_wrapper {
+        padding: 71px 0 43px;
+    }
+    .vot_assistant_inner {
+        padding: 51px 15px 54px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 991.98px) {
+    .vot_practice_wrapper .container-fluid .col-xl-4:nth-child(2) .vot_practice_section a {
+        flex-direction: row-reverse;
+    }
+    .vot_practice_wrapper .container-fluid .col-xl-4:nth-child(3) .vot_practice_section a, .vot_practice_wrapper .container-fluid .col-xl-4:nth-child(6) .vot_practice_section a {
+        flex-direction: row;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .vot_header_info ul li {
+        margin-left: 15px;
+        text-align: center;
+        font-size: 14px;
+    }
+    .vot_about_img img {
+        margin: 20px 0 0;
+        width: calc(100% - 20px);
+    }
+    .vot_about_img:before {
+        width: calc(100% - 20px);
+        bottom: 20px;
+    }
+    .vot_banner_text {
+        text-align: center;
+    }
+    .vot_banner_text h1 {
+        font-size: 40px;
+        line-height: 40px;
+    }
+    .menu_btn {
+        padding: 12px 0 0;
+    }
+    .vot_banner_button {
+        top: 44.5%;
+    }
+    .vot_services_sectionBg {
+        background-size: 30%;
+    }
+    .vot_testimonial_wrapper {
+        padding: 71px 0 39px;
+    }
+    .vot_blog_thumb {
+        margin-bottom: 34px;
+    }
+    .vot_blog_wrapper {
+        padding: 71px 0 40px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .vot_header_wrapper .vot_btn {
+        display: none;
+    }
+    .vot_header_info ul li {
+        margin-left: 0;
+        width: 100%;
+        text-align: left;
+        font-size: 14px;
+    }
+    .vot_header_icon svg {
+        height: 13px;
+    }
+    .vot_header_info ul {
+        width: 100%;
+    }
+    .vot_about_text > ul > li {
+        margin: 0 0 30px;
+        width: 100%;
+        justify-content: center;
+    }
+    .vot_caseStudy_laws .tabs_nav, .vot_caseStudy_laws .tabs_content {
+        width: 100%;
+    }
+    .vot_caseStudy_laws .tabs_nav li.active a:before {
+        content: unset;
+    }
+    .vot_practice_text, .vot_practice_img {
+        width: 100%;
+    }
+    .vot_practice_wrapper .container-fluid .col-xl-4:nth-child(4) .vot_practice_section a, .vot_practice_wrapper .container-fluid .col-xl-4:nth-child(5) .vot_practice_section a, .vot_practice_wrapper .container-fluid .col-xl-4:nth-child(6) .vot_practice_section a   {
+        flex-direction: column-reverse;
+    }
+    .vot_practice_wrapper .container-fluid {
+        padding: 0 30px;
+    }
+    .vot_practice_wrapper .container-fluid .col-xl-4 {
+        margin-bottom: 30px;
+    }
+    .vot_practice_wrapper .container-fluid .col-xl-4:last-of-type {
+        margin-bottom: 0;
+    }
+    .vot_subscribe_holder {
+        flex-wrap: wrap;
+    }
+    .vot_subscribe_holder .vot_btn {
+        margin: 15px 0 0;
+        width: 100%;
+    }
+    .menu_btn {
+        padding: 13px 0 0;
+    }
+    .vot_header_top {
+        padding: 18px 0 0;
+    }
+    .vot_banner_button {
+        display: none;
+    }
+    .vot_banner_text {
+        padding: 41px 0px;
+    }
+    .vot_about_section {
+        padding: 71px 0 50px;
+    }
+    .vot_caseStudy_laws .tabs_nav li:last-child a {
+        border-bottom: 1px solid var(--main-gym-border);
+    }
+}
+
+@media (min-width: 400px) and (max-width: 575px){
+    .vot_team_section {
+        width: 80%;
+        margin: auto;
+    }
+}
