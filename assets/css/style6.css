@@ -336,7 +336,8 @@ h6 {
   padding: 302px 0 310px;
   position: relative;
   background-color: var(--main-green-version4);
-  background-image: url(../images/index6/banner_bg.jpg);
+  /* background-image: url(../images/index6/banner_bg.jpg); */
+  background-image: url(../images/wedding/banner_bg1.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -352,7 +353,8 @@ h6 {
   font-size: 62px;
   font-weight: 700;
   line-height: 80px;
-  color: var(--main-black5);
+  /* color: var(--main-black5); */
+  color: #fff;
   font-style: italic;
 }
 /********************************************************
