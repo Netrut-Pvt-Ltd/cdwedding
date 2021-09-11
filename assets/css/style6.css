@@ -321,14 +321,15 @@ h6 {
   position: absolute;
   z-index: 1;
   left: 0;
-  background-image: url(../images/index6/logo_bg.png);
-  background-repeat: no-repeat;
+  /* background-image: url(../images/index6/logo_bg.png); */
+  /* background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
   text-align: center;
-  padding: 15px 0 0;
+  padding: 15px 0 0; */
   top: 0;
 }
+
 /********************************************************
     5. Banner CSS Start
 ********************************************************/
@@ -1167,9 +1168,9 @@ textarea.wed_form_field,
     width: 160px;
     height: 100px;
   }
-  .wed_logo img {
+  /* .wed_logo img {
     height: 45px;
-  }
+  } */
   .wed_banner_wrapper {
     padding: 162px 0 170px;
   }
@@ -1322,6 +1323,9 @@ textarea.wed_form_field,
   }
   .wed_lawn_wrapper .lawn_box h4 {
     left: 19%;
+  }
+  .wed_contact_info_wrapper ul li .wed_contact_info_text {
+    width: 100%;
   }
 }
 
