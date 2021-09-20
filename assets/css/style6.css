@@ -334,11 +334,12 @@ h6 {
     5. Banner CSS Start
 ********************************************************/
 .wed_banner_wrapper {
-  padding: 302px 0 310px;
+  /* padding: 302px 0 310px; */
+  padding: 155px 0 50px;
   position: relative;
   background-color: var(--main-green-version4);
   /* background-image: url(../images/index6/banner_bg.jpg); */
-  background-image: url(../images/wedding/banner_bg2.jpg);
+  background-image: url(../images/wedding/banner_bg4.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
