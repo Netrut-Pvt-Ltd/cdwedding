@@ -902,7 +902,7 @@ textarea.wed_form_field {
 }
 .wed_contact_info_wrapper ul li .wed_contact_info_text a {
   color: var(--main-green-version3);
-  font-size: 24px;
+  font-size: 21px;
   font-weight: 700;
   position: relative;
   padding: 0;
@@ -1045,6 +1045,16 @@ textarea.wed_form_field,
   left: 34%;
 }
 
+.wed_service_slides {
+  max-width: 500px;
+  margin: auto;
+}
+
+.wed_service_slides .download_menu .btn {
+  background-color: #b19e69;
+  color: #fff;
+}
+
 /********************************************************
 	16. Responsive CSS Start
 ********************************************************/
@@ -1066,6 +1076,9 @@ textarea.wed_form_field,
 }
 
 @media (min-width: 1200px) {
+  .wed_contact_info_wrapper ul li .wed_contact_info_text a {
+    font-size: 19px;
+  }
   .wed_married_img {
     padding-left: 100px;
   }
