@@ -474,7 +474,7 @@ img.wed_about_big_img {
 ********************************************************/
 .wed_services_wrapper {
   padding: 80px 0 72px;
-  background: var(--main-bg-color);
+  background: var(--main-wed-pink-bg);
   position: relative;
 }
 .wed_services_section {
@@ -1046,14 +1046,24 @@ textarea.wed_form_field,
 }
 
 .wed_service_slides {
-  max-width: 500px;
+  max-width: 100%;
   margin: auto;
+  padding: 30px 24px;
+  border: 1px solid black;
+}
+.wed_service_slides .btn {
+  width: -webkit-fill-available;
+  font-size: 18px;
 }
 
-.wed_service_slides .download_menu .btn {
+.wed_lawn_wrapper {
+  padding: 80px 0px;
+}
+
+/* .wed_service_slides .download_menu .btn {
   background-color: #b19e69;
   color: #fff;
-}
+} */
 
 /********************************************************
 	16. Responsive CSS Start
